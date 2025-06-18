@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FiBook, FiMapPin, FiMail, FiPhone, FiCalendar } from 'react-icons/fi';
+import { FiBook, FiMapPin, FiMail, FiPhone } from 'react-icons/fi';
 
 const About = () => {
   const [ref, inView] = useInView({
