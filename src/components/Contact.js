@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiMail, FiMapPin, FiPhone, FiGithub, FiLinkedin, FiSend } from 'react-icons/fi';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -16,6 +17,8 @@ const Contact = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
     setFormData({
@@ -27,13 +30,27 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      alert('Thank you for your message! I will get back to you soon.');
+    setSuccessMessage("");
+    setErrorMessage("");
+
+    emailjs.send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message
+      },
+      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    )
+    .then((result) => {
+      setSuccessMessage("Thank you for your message! I will get back to you soon.");
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitting(false);
-    }, 1000);
+    }, (error) => {
+      setErrorMessage("Sorry, something went wrong. Please try again later.");
+      setIsSubmitting(false);
+    });
   };
 
   const contactInfo = [
@@ -170,6 +187,13 @@ const Contact = () => {
                   placeholder="Your message..."
                 />
               </motion.div>
+
+              {successMessage && (
+                <div className="text-green-600 dark:text-green-400 text-center">{successMessage}</div>
+              )}
+              {errorMessage && (
+                <div className="text-red-600 dark:text-red-400 text-center">{errorMessage}</div>
+              )}
 
               <motion.button
                 variants={itemVariants}
