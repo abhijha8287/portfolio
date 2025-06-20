@@ -73,17 +73,18 @@ const About = () => {
             </motion.h3>
             <motion.div variants={itemVariants} className="space-y-4 text-gray-600 dark:text-gray-300">
               <p>
-                I'm a passionate Machine Learning Engineer and AI enthusiast currently pursuing BS in Data Science at IIT Madras. 
+                I'm a passionate Machine Learning Student and AI enthusiast currently pursuing BS in Data Science at IIT Madras. 
                 I love creating innovative web applications and exploring the fascinating world of artificial intelligence.
               </p>
               <p>
                 With a strong foundation in Machine Learning and modern web technologies, I specialize in building 
-                user-friendly applications that solve real-world problems. My projects range from AI-powered chatbots 
-                to comprehensive web applications.
+                machine learning models that solve real-world problems. My projects range from AI-powered chatbots 
+                to comprehensive web applications. I am also interested in web development and have a strong foundation
+                 in web technologies.
               </p>
               <p>
                 I'm always eager to learn new technologies and take on challenging projects that push my boundaries. 
-                When I'm not coding, you can find me exploring new AI tools, contributing to open-source projects, 
+                When I'm not coding, you can find me exploring new AI tools, frameworks, and libraries 
                 or sharing knowledge with the developer community.
               </p>
             </motion.div>

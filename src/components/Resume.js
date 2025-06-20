@@ -32,9 +32,9 @@ const Resume = () => {
       icon: FiCode,
       title: "Technical Skills",
       items: [
-        "Python, JavaScript, Vue.js",
-        "LangChain, OpenAI API, Streamlit",
-        "Git, VS Code, PostgreSQL, Docker"
+        "Python, Machine Learning, Deep Learning, LangChain",
+        "Streamlit, JavaScript, Vue.js, CSS, Bootstrap",
+        "Git, VS Code, PostgreSQL, Docker, Linux, SQL"
       ]
     },
     {

@@ -187,19 +187,19 @@ const Skills = () => {
               <div className="space-y-3 text-gray-600 dark:text-gray-300">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p>Strong foundation in modern AI/ML technologies</p>
+                  <p>Strong foundation in modern AI/ML technologies and web development.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p>Experience with AI/ML integration and API development and deployment</p>
+                  <p>Experience with AI/ML integration and API development and deployment.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p>Proven track record of building user-friendly applications and tools</p>
+                  <p>Handle Pressure and Work under tight deadlines.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p>Quick learner with ability to adapt to new technologies</p>
+                  <p>Quick learner with ability to adapt to new technologies.</p>
                 </div>
               </div>
             </motion.div>

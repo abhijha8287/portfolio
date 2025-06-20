@@ -15,15 +15,15 @@ const Projects = () => {
       description: "Sentiment analysis and pros/cons extraction from user reviews using advanced NLP techniques.",
       liveLink: "https://sentimentresponder.streamlit.app",
       githubLink: null,
-      techStack: ["Python", "Streamlit", "OpenAI API", "NLP"],
+      techStack: ["Python", "Streamlit", "OpenAI API", "LangChain", "NLP", "Conditional Chains"],
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop"
     },
     {
-      title: "Detailed Summary Generator",
-      description: "Generates comprehensive reports on any topic and provides concise 5-line summaries.",
-      liveLink: "https://detailedsummarygenerator.streamlit.app",
+      title: "Structured Summary Generator",
+      description: "Generates structured summaries of user reviews pros or cons and give keys points.",
+      liveLink: "https://reviewanalysis2byabhishek.streamlit.app/",
       githubLink: null,
-      techStack: ["Python", "Streamlit", "LangChain", "OpenAI"],
+      techStack: ["Python", "Streamlit", "OpenAI API", "LangChain", "Pydantic", "JSON Parsing", "Structured Output Parsing"],
       image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&h=250&fit=crop"
     },
     {
@@ -31,7 +31,7 @@ const Projects = () => {
       description: "Returns 5 interesting facts about any user-given topic using structured output parsing.",
       liveLink: "https://5factgeneratorbyabhishek.streamlit.app",
       githubLink: null,
-      techStack: ["Python", "Streamlit", "OpenAI API", "JSON Parsing"],
+      techStack: ["Python", "Streamlit", "OpenAI API", "LangChain", "JSON Parsing", "Structured Output Parsing"],
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop"
     },
     {
@@ -39,7 +39,7 @@ const Projects = () => {
       description: "Automatically creates comprehensive notes and quiz questions from any given topic.",
       liveLink: "https://learntestyourself.streamlit.app",
       githubLink: null,
-      techStack: ["Python", "Streamlit", "OpenAI API", "Quiz Generation"],
+      techStack: ["Python", "Streamlit", "OpenAI API", "LangChain", "Parallel Chains"],
       image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop"
     },
     {
@@ -47,7 +47,7 @@ const Projects = () => {
       description: "Generates engaging tweets and LinkedIn posts from any topic using parallel chains.",
       liveLink: "https://postgeneratorbyabhishek.streamlit.app",
       githubLink: null,
-      techStack: ["Python", "Streamlit", "LangChain", "Social Media"],
+      techStack: ["Python", "Streamlit", "LangChain", "OpenAI API", "Parallel Runnable"],
       image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&h=250&fit=crop"
     },
     {
@@ -55,8 +55,40 @@ const Projects = () => {
       description: "Creates topic-based jokes with explanations using AI-powered humor generation.",
       liveLink: "https://jokegeneratorbyabhishek.streamlit.app",
       githubLink: null,
-      techStack: ["Python", "Streamlit", "OpenAI API", "Humor AI"],
+      techStack: ["Python", "Streamlit", "OpenAI API", "LangChain", "Passthrough Runnable"],
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=250&fit=crop"
+    },
+    {
+      title: "Career Guidance Chatbot",
+      description: "A smart AI-powered chatbot that suggests career paths based on user interests, skills, and preferences. Useful for students, graduates, or professionals seeking direction.\n\nPersonalized career suggestions, natural language interaction, and prompt engineering for guided conversations.\n\nNote: If the app appears asleep, click 'Wake App' and wait a few seconds.",
+      liveLink: "https://careerchatbotbyabhishek.streamlit.app",
+      githubLink: null,
+      techStack: ["Streamlit", "Python", "OpenAI API", "LangChain", "RAG", "Vector Store", "Retriever", "Faiss"],
+      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400&h=250&fit=crop"
+    },
+    {
+      title: "Car Price Prediction",
+      description: "Predict the selling price of a car using various features like year, fuel type, seller type, and more.\n\nData cleaning and encoding, feature selection, models: Linear Regression, Random Forest, XGBoost, evaluation: R² Score, RMSE.",
+      liveLink: "https://github.com/abhijha8287/CodeAlpha_project",
+      githubLink: null,
+      techStack: ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn", "Linear Regression", "R² Score"],
+      image: "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=400&h=250&fit=crop"
+    },
+    {
+      title: "Flower Classification",
+      description: "Classify flowers into categories based on input features.\n\nPreprocessing and feature engineering, classification using Random Forest and XGBoost, evaluation using confusion matrix.",
+      liveLink: "https://github.com/abhijha8287/CodeAlpha_project",
+      githubLink: null,
+      techStack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Logistic Regression", "Decision Tree", "K Nearest Neighbors", "Confusion Matrix"],
+      image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?w=400&h=250&fit=crop"
+    },
+    {
+      title: "Sales Prediction",
+      description: "Predict future sales based on dataset features.\n\nData preprocessing, regression models: Linear Regression, Random Forest, XGBoost, metrics: R² Score, RMSE.",
+      liveLink: "https://github.com/abhijha8287/CodeAlpha_project",
+      githubLink: null,
+      techStack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Linear Regression", "R² Score"],
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop"
     }
   ];
 

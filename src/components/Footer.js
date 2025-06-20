@@ -38,7 +38,7 @@ const Footer = () => {
               Machine Learning & AI Enthusiast
             </p>
             <p className="text-sm text-gray-500">
-              Creating innovative solutions with modern technologies
+              Creating innovative solutions with modern technologies.
             </p>
           </div>
 
