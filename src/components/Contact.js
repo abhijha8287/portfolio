@@ -129,96 +129,7 @@ const Contact = () => {
           </motion.p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-          >
-            <motion.h3 variants={itemVariants} className="text-2xl font-semibold mb-6">
-              Send Me a Message
-            </motion.h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <motion.div variants={itemVariants}>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-secondary-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-secondary-800 text-gray-900 dark:text-white transition-colors duration-200"
-                  placeholder="Your name"
-                />
-              </motion.div>
-
-              <motion.div variants={itemVariants}>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-secondary-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-secondary-800 text-gray-900 dark:text-white transition-colors duration-200"
-                  placeholder="your.email@example.com"
-                />
-              </motion.div>
-
-              <motion.div variants={itemVariants}>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                  rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 dark:border-secondary-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-secondary-800 text-gray-900 dark:text-white transition-colors duration-200 resize-none"
-                  placeholder="Your message..."
-                />
-              </motion.div>
-
-              {successMessage && (
-                <div className="text-green-600 dark:text-green-400 text-center">{successMessage}</div>
-              )}
-              {errorMessage && (
-                <div className="text-red-600 dark:text-red-400 text-center">{errorMessage}</div>
-              )}
-
-              <motion.button
-                variants={itemVariants}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                type="submit"
-                disabled={isSubmitting}
-                className="btn-primary w-full flex items-center justify-center gap-2 py-3 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? (
-                  <>
-                    <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                    Sending...
-                  </>
-                ) : (
-                  <>
-                    <FiSend className="w-5 h-5" />
-                    Send Message
-                  </>
-                )}
-              </motion.button>
-            </form>
-          </motion.div>
-
-          {/* Contact Information */}
+        <div className="flex flex-col items-center gap-8">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -227,7 +138,6 @@ const Contact = () => {
             <motion.h3 variants={itemVariants} className="text-2xl font-semibold mb-6">
               Contact Information
             </motion.h3>
-            
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
                 <motion.div
@@ -248,17 +158,15 @@ const Contact = () => {
                         {info.value}
                       </a>
                     ) : (
-                      <p className="text-gray-900 dark:text-white font-medium">{info.value}</p>
+                      <span className="text-gray-900 dark:text-white font-medium">{info.value}</span>
                     )}
                   </div>
                 </motion.div>
               ))}
             </div>
-
-            {/* Social Links */}
             <motion.div variants={itemVariants}>
-              <h4 className="text-lg font-semibold mb-4">Follow Me</h4>
-              <div className="flex space-x-4">
+              <h4 className="text-lg font-semibold mb-4">Connect with Me</h4>
+              <div className="flex space-x-4 justify-center">
                 {socialLinks.map((social, index) => (
                   <motion.a
                     key={index}
@@ -272,19 +180,6 @@ const Contact = () => {
                     <social.icon className="w-6 h-6" />
                   </motion.a>
                 ))}
-              </div>
-            </motion.div>
-
-            {/* Additional Info */}
-            <motion.div variants={itemVariants} className="mt-8 p-6 bg-gray-50 dark:bg-secondary-800 rounded-lg">
-              <h4 className="text-lg font-semibold mb-3">Let's Connect!</h4>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-              </p>
-              <div className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <p>• Available for freelance projects</p>
-                <p>• Open to collaboration opportunities</p>
-                <p>• Always learning and growing</p>
               </div>
             </motion.div>
           </motion.div>

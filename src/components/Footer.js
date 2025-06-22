@@ -1,6 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin, FiMail, FiArrowUp } from 'react-icons/fi';
+import pythonLogo from '../logos/python-original.svg';
+import jsLogo from '../logos/javascript-original.svg';
+import postmanLogo from '../logos/postman-original.svg';
+import githubLogo from '../logos/github-original.svg';
+import pytorchLogo from '../logos/pytorch-original.svg';
+import langchainLogo from '../logos/langchain.svg';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -83,6 +89,18 @@ const Footer = () => {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Tech Logos Row */}
+        <div className="flex justify-center items-center gap-6 py-6">
+          <img src={langchainLogo} alt="LangChain" className="w-8 h-8" />
+          <img src={pythonLogo} alt="Python" className="w-8 h-8" />
+          <img src={jsLogo} alt="JavaScript" className="w-8 h-8" />
+          <img src={postmanLogo} alt="Postman" className="w-8 h-8" />
+          <span className="relative inline-flex items-center justify-center">
+            <img src={githubLogo} alt="GitHub" className="w-8 h-8 bg-white rounded-full border border-gray-300 shadow-md p-1" />
+          </span>
+          <img src={pytorchLogo} alt="PyTorch" className="w-8 h-8" />
         </div>
 
         {/* Divider */}

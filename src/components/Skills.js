@@ -1,6 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import pythonLogo from '../logos/python-original.svg';
+import jsLogo from '../logos/javascript-original.svg';
+import html5Logo from '../logos/html5.svg';
+import css3Logo from '../logos/css3.svg';
+import sqlLogo from '../logos/sql.svg';
+import vuejsLogo from '../logos/vuejs.svg';
+import streamlitLogo from '../logos/streamlit.svg';
+import flaskLogo from '../logos/flask.svg';
+import langchainLogo from '../logos/langchain.svg';
+import scikitLearnLogo from '../logos/scikit-learn.svg';
+import tensorflowLogo from '../logos/tensorflow.svg';
+import pandasLogo from '../logos/pandas.svg';
+import pytorchLogo from '../logos/pytorch-original.svg';
+import openaiLogo from '../logos/openai.svg';
+import githubLogo from '../logos/github-original.svg';
+import vscodeLogo from '../logos/vscode.svg';
+import postmanLogo from '../logos/postman-original.svg';
+import postgresqlLogo from '../logos/postgresql.svg';
+import dockerLogo from '../logos/docker.svg';
 
 const Skills = () => {
   const [ref, inView] = useInView({
@@ -12,43 +31,40 @@ const Skills = () => {
     {
       category: "Programming Languages",
       skills: [
-        { name: "Python", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "HTML/CSS", level: 90 },
-        { name: "SQL", level: 80 },
-        
+        { name: "Python", logo: pythonLogo },
+        { name: "JavaScript", logo: jsLogo },
+        { name: "HTML5", logo: html5Logo },
+        { name: "CSS3", logo: css3Logo },
+        { name: "SQL", logo: sqlLogo },
       ]
     },
     {
       category: "Frameworks & Libraries",
       skills: [
-        { name: "Vue.js", level: 85 },
-        { name: "Streamlit", level: 90 },
-        { name: "Flask", level: 75 }
-        // { name: "Express.js", level: 70 },
-        // { name: "Tailwind CSS", level: 85 }
+        { name: "Vue.js", logo: vuejsLogo },
+        { name: "Streamlit", logo: streamlitLogo },
+        { name: "Flask", logo: flaskLogo },
       ]
     },
     {
       category: "AI/ML & Tools",
       skills: [
-        { name: "LangChain", level: 90 },
-        { name: "Scikit-learn", level: 85 },
-        { name: "TensorFlow", level: 90 },
-        { name: "Pandas", level: 80 },
-        { name: "PyTorch", level: 90 },
-        { name: "OpenAI API", level: 85 },
-        
+        { name: "LangChain", logo: langchainLogo },
+        { name: "Scikit-learn", logo: scikitLearnLogo },
+        { name: "TensorFlow", logo: tensorflowLogo },
+        { name: "Pandas", logo: pandasLogo },
+        { name: "PyTorch", logo: pytorchLogo },
+        { name: "OpenAI API", logo: openaiLogo },
       ]
     },
     {
       category: "Other Technologies",
       skills: [
-        { name: "Git/GitHub", level: 85 },
-        { name: "VS Code", level: 90 },
-        { name: "Postman", level: 75 },
-        { name: "PostgreSQL", level: 90 },
-        { name: "Docker", level: 80 }
+        { name: "Git/GitHub", logo: githubLogo },
+        { name: "VS Code", logo: vscodeLogo },
+        { name: "Postman", logo: postmanLogo },
+        { name: "PostgreSQL", logo: postgresqlLogo },
+        { name: "Docker", logo: dockerLogo },
       ]
     }
   ];
@@ -128,24 +144,15 @@ const Skills = () => {
                   <h4 className="text-lg font-medium text-gray-900 dark:text-white mb-4">
                     {category.category}
                   </h4>
-                  <div className="space-y-4">
+                  <div className="flex flex-wrap gap-3">
                     {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex}>
-                        <div className="flex justify-between items-center mb-2">
-                          <span className="text-gray-700 dark:text-gray-300 font-medium">
-                            {skill.name}
-                          </span>
-                          <span className="text-sm text-gray-500 dark:text-gray-400">
-                            {skill.level}%
-                          </span>
-                        </div>
-                        <div className="w-full bg-gray-200 dark:bg-secondary-700 rounded-full h-2">
-                          <motion.div
-                            custom={skill.level}
-                            variants={progressVariants}
-                            className="bg-gradient-to-r from-primary-500 to-purple-600 h-2 rounded-full"
-                          />
-                        </div>
+                      <div key={skillIndex} className="flex items-center gap-2 bg-primary-50 dark:bg-secondary-700 px-3 py-2 rounded-lg shadow-sm">
+                        {skill.logo && (
+                          <img src={skill.logo} alt={skill.name + ' logo'} className="w-6 h-6" />
+                        )}
+                        <span className="text-gray-700 dark:text-gray-300 font-medium">
+                          {skill.name}
+                        </span>
                       </div>
                     ))}
                   </div>
