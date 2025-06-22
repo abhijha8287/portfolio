@@ -42,6 +42,12 @@ const Contact = () => {
       name: "LinkedIn",
       url: "https://linkedin.com/in/abhishekjha15",
       color: "hover:text-blue-600 dark:hover:text-blue-400"
+    },
+    {
+      icon: FiMail,
+      name: "Email",
+      url: "mailto:abhijha8287@gmail.com",
+      color: "hover:text-blue-500 dark:hover:text-blue-300"
     }
   ];
 
