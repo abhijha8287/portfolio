@@ -1,57 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FiMail, FiMapPin, FiPhone, FiGithub, FiLinkedin, FiSend } from 'react-icons/fi';
-import emailjs from 'emailjs-com';
+import { FiMail, FiMapPin, FiPhone, FiGithub, FiLinkedin } from 'react-icons/fi';
 
 const Contact = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
-
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSuccessMessage("");
-    setErrorMessage("");
-
-    emailjs.send(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      {
-        from_name: formData.name,
-        from_email: formData.email,
-        message: formData.message
-      },
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-    )
-    .then((result) => {
-      setSuccessMessage("Thank you for your message! I will get back to you soon.");
-      setFormData({ name: '', email: '', message: '' });
-      setIsSubmitting(false);
-    }, (error) => {
-      setErrorMessage("Sorry, something went wrong. Please try again later.");
-      setIsSubmitting(false);
-    });
-  };
 
   const contactInfo = [
     {

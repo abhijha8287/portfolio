@@ -101,17 +101,6 @@ const Skills = () => {
     }
   };
 
-  const progressVariants = {
-    hidden: { width: 0 },
-    visible: (level) => ({
-      width: `${level}%`,
-      transition: {
-        duration: 1,
-        delay: 0.5
-      }
-    })
-  };
-
   return (
     <section id="skills" className="section-padding bg-gray-50 dark:bg-secondary-800">
       <div className="max-w-7xl mx-auto">
