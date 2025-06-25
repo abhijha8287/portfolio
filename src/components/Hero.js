@@ -7,13 +7,8 @@ const Hero = () => {
     document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
   };
 
-  const downloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Abhishek_Jha_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const openResume = () => {
+    window.open('/abhishekjharesume.pdf', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -86,7 +81,7 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={downloadResume}
+              onClick={openResume}
               className="btn-primary flex items-center gap-2"
             >
               <FiDownload className="w-5 h-5" />

@@ -9,13 +9,8 @@ const Resume = () => {
     threshold: 0.1,
   });
 
-  const downloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Abhishek_Jha_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const openResume = () => {
+    window.open('/abhishekjharesume.pdf', '_blank', 'noopener,noreferrer');
   };
 
   const highlights = [
@@ -100,7 +95,7 @@ const Resume = () => {
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={downloadResume}
+            onClick={openResume}
             className="btn-primary inline-flex items-center gap-2 text-lg px-8 py-3"
           >
             <FiDownload className="w-6 h-6" />
