@@ -7,6 +7,7 @@ import html5Logo from '../logos/html5.svg';
 import css3Logo from '../logos/css3.svg';
 import sqlLogo from '../logos/sql.svg';
 import vuejsLogo from '../logos/vuejs.svg';
+import reactLogo from '../logos/react-original.svg';
 import streamlitLogo from '../logos/streamlit.svg';
 import flaskLogo from '../logos/flask.svg';
 import langchainLogo from '../logos/langchain.svg';
@@ -41,6 +42,7 @@ const Skills = () => {
     {
       category: "Frameworks & Libraries",
       skills: [
+        { name: "React.js", logo: reactLogo },
         { name: "Vue.js", logo: vuejsLogo },
         { name: "Streamlit", logo: streamlitLogo },
         { name: "Flask", logo: flaskLogo },
