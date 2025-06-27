@@ -11,8 +11,8 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Review Sentiment Analysis",
-      description: "Sentiment analysis and pros/cons extraction from user reviews using advanced NLP techniques.",
+      title: "Sentiment Responder",
+      description: "Sentiment analysis and response from user reviews using advanced NLP techniques.",
       liveLink: "https://sentimentresponder.streamlit.app",
       githubLink: "https://github.com/abhijha8287/SentimentResponder",
       techStack: ["Python", "Streamlit", "OpenAI API", "LangChain", "NLP", "Conditional Chains"],
