@@ -194,8 +194,7 @@ const Certifications = () => {
                                     whileTap={{ scale: 0.95 }}
                                     className="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium text-sm transition-colors duration-200"
                                 >
-                                    <FiExternalLink className="w-4 h-4" />
-                                    View Certificate
+                                    
                                 </motion.button>
                             </div>
 
