@@ -11,6 +11,22 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Dogs vs Cats Image Classification",
+      description: "Built and trained a deep Convolutional Neural Network (CNN) to classify dog and cat images using the Kaggle dataset.\n\nData augmentation, transfer learning, and model evaluation with accuracy and confusion matrix.",
+      liveLink: "",
+      githubLink: "https://github.com/abhijha8287/ann",
+      techStack: ["Python", "TensorFlow", "Keras", "CNN", "Computer Vision", "Kaggle", "Data Augmentation"],
+      image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=250&fit=crop"
+    },
+    {
+      title: "Customer Churn Prediction (ANN)",
+      description: "Developed an end-to-end customer churn prediction system using Artificial Neural Networks.\n\nFeature engineering, model training and evaluation, and deployment-ready pipeline.",
+      liveLink: "",
+      githubLink: "https://github.com/abhijha8287/cnn/tree/master",
+      techStack: ["Python", "TensorFlow", "Keras", "ANN", "Classification", "Pandas", "Scikit-learn"],
+      image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=250&fit=crop"
+    },
+    {
       title: "Sentiment Responder",
       description: "Sentiment analysis and response from user reviews using advanced NLP techniques.",
       liveLink: "https://sentimentresponder.streamlit.app",
@@ -160,7 +176,7 @@ const Projects = () => {
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-200">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
                   {project.description}
                 </p>
