@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { FiAward, FiCalendar, FiExternalLink } from 'react-icons/fi';
+import { FiAward, FiCalendar } from 'react-icons/fi';
 
 const Certifications = () => {
     const [ref, inView] = useInView({
@@ -194,7 +194,7 @@ const Certifications = () => {
                                     whileTap={{ scale: 0.95 }}
                                     className="inline-flex items-center gap-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium text-sm transition-colors duration-200"
                                 >
-                                    
+
                                 </motion.button>
                             </div>
 

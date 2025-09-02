@@ -21,6 +21,18 @@ import vscodeLogo from '../logos/vscode.svg';
 import postmanLogo from '../logos/postman-original.svg';
 import postgresqlLogo from '../logos/postgresql.svg';
 import dockerLogo from '../logos/docker.svg';
+import javaLogo from '../logos/java.svg';
+import xgboostLogo from '../logos/xgboost.svg';
+import kerasLogo from '../logos/keras.svg';
+import numpyLogo from '../logos/numpy.svg';
+import matplotlibLogo from '../logos/matplotlib.svg';
+import seabornLogo from '../logos/seaborn.svg';
+import plotlyLogo from '../logos/plotly.svg';
+import jupyterLogo from '../logos/jupyter.svg';
+import colabLogo from '../logos/colab.svg';
+import gitLogo from '../logos/git.svg';
+import fastapiLogo from '../logos/fastapi.svg';
+import awsLogo from '../logos/aws.svg';
 
 const Skills = () => {
   const [ref, inView] = useInView({
@@ -33,15 +45,33 @@ const Skills = () => {
       category: "Programming Languages",
       skills: [
         { name: "Python", logo: pythonLogo },
+        { name: "SQL", logo: sqlLogo },
         { name: "JavaScript", logo: jsLogo },
         { name: "HTML5", logo: html5Logo },
         { name: "CSS3", logo: css3Logo },
-        { name: "SQL", logo: sqlLogo },
+        { name: "Java", logo: javaLogo },
       ]
     },
     {
       category: "Frameworks & Libraries",
       skills: [
+        { name: "Scikit-learn", logo: scikitLearnLogo },
+        { name: "XGBoost", logo: xgboostLogo },
+        { name: "TensorFlow", logo: tensorflowLogo },
+        { name: "Keras", logo: kerasLogo },
+        { name: "PyTorch", logo: pytorchLogo },
+        { name: "NLP", logo: null },
+        { name: "Text-Processing", logo: null },
+        { name: "Hugging Face", logo: null },
+        { name: "LangChain", logo: langchainLogo },
+        { name: "VectorDB", logo: null },
+        { name: "LangGraph", logo: null },
+        { name: "CrewAI", logo: null },
+        { name: "Pandas", logo: pandasLogo },
+        { name: "NumPy", logo: numpyLogo },
+        { name: "Matplotlib", logo: matplotlibLogo },
+        { name: "Seaborn", logo: seabornLogo },
+        { name: "Plotly", logo: plotlyLogo },
         { name: "React.js", logo: reactLogo },
         { name: "Vue.js", logo: vuejsLogo },
         { name: "Streamlit", logo: streamlitLogo },
@@ -49,24 +79,24 @@ const Skills = () => {
       ]
     },
     {
-      category: "AI/ML & Tools",
+      category: "Tools",
       skills: [
-        { name: "LangChain", logo: langchainLogo },
-        { name: "Scikit-learn", logo: scikitLearnLogo },
-        { name: "TensorFlow", logo: tensorflowLogo },
-        { name: "Pandas", logo: pandasLogo },
-        { name: "PyTorch", logo: pytorchLogo },
         { name: "OpenAI API", logo: openaiLogo },
+        { name: "Jupyter Notebook", logo: jupyterLogo },
+        { name: "Google Colab", logo: colabLogo },
+        { name: "VS Code", logo: vscodeLogo },
+        { name: "Git", logo: gitLogo },
+        { name: "GitHub", logo: githubLogo },
+        { name: "Docker", logo: dockerLogo },
+        { name: "FastAPI", logo: fastapiLogo },
+        { name: "AWS", logo: awsLogo },
       ]
     },
     {
       category: "Other Technologies",
       skills: [
-        { name: "Git/GitHub", logo: githubLogo },
-        { name: "VS Code", logo: vscodeLogo },
         { name: "Postman", logo: postmanLogo },
         { name: "PostgreSQL", logo: postgresqlLogo },
-        { name: "Docker", logo: dockerLogo },
       ]
     }
   ];
@@ -103,6 +133,31 @@ const Skills = () => {
     }
   };
 
+  // Function to render skill with or without logo
+  const renderSkill = (skill) => {
+    if (skill.logo) {
+      return (
+        <div key={skill.name} className="flex items-center gap-2 bg-primary-50 dark:bg-secondary-700 px-3 py-2 rounded-lg shadow-sm">
+          <img src={skill.logo} alt={skill.name + ' logo'} className="w-6 h-6" />
+          <span className="text-gray-700 dark:text-gray-300 font-medium">
+            {skill.name}
+          </span>
+        </div>
+      );
+    } else {
+      return (
+        <div key={skill.name} className="flex items-center gap-2 bg-gray-100 dark:bg-secondary-600 px-3 py-2 rounded-lg shadow-sm">
+          <div className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center">
+            <span className="text-white text-xs font-bold">{skill.name.charAt(0)}</span>
+          </div>
+          <span className="text-gray-700 dark:text-gray-300 font-medium">
+            {skill.name}
+          </span>
+        </div>
+      );
+    }
+  };
+
   return (
     <section id="skills" className="section-padding bg-gray-50 dark:bg-secondary-800">
       <div className="max-w-7xl mx-auto">
@@ -136,16 +191,7 @@ const Skills = () => {
                     {category.category}
                   </h4>
                   <div className="flex flex-wrap gap-3">
-                    {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex} className="flex items-center gap-2 bg-primary-50 dark:bg-secondary-700 px-3 py-2 rounded-lg shadow-sm">
-                        {skill.logo && (
-                          <img src={skill.logo} alt={skill.name + ' logo'} className="w-6 h-6" />
-                        )}
-                        <span className="text-gray-700 dark:text-gray-300 font-medium">
-                          {skill.name}
-                        </span>
-                      </div>
-                    ))}
+                    {category.skills.map((skill) => renderSkill(skill))}
                   </div>
                 </motion.div>
               ))}

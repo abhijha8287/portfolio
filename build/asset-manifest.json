@@ -1,13 +1,45 @@
 {
   "files": {
-    "main.css": "./static/css/main.4b9ae21d.css",
-    "main.js": "./static/js/main.ff106ee0.js",
+    "main.css": "./static/css/main.629cc807.css",
+    "main.js": "./static/js/main.33be4e3f.js",
+    "static/media/postgresql.svg": "./static/media/postgresql.7bc394e86ea1f692d59a3d484ad156af.svg",
+    "static/media/flask.svg": "./static/media/flask.c084b9349458e09e6559ca851f06e2b2.svg",
+    "static/media/scikit-learn.svg": "./static/media/scikit-learn.73b2a863dc9eea5d16c9c271fc70605f.svg",
+    "static/media/docker.svg": "./static/media/docker.1d41320cb0101dbbc6fe182abd590263.svg",
+    "static/media/postman-original.svg": "./static/media/postman-original.0b51589eade793331b5b92745aa5164f.svg",
+    "static/media/vscode.svg": "./static/media/vscode.966b688e87c592fc5bd1c84ca5f778a3.svg",
+    "static/media/react-original.svg": "./static/media/react-original.b1328e712cfa4bab0ad7e6d060c76ee8.svg",
+    "static/media/sql.svg": "./static/media/sql.ce52b3c0a7386f304df48a56071c39f4.svg",
+    "static/media/python-original.svg": "./static/media/python-original.ffa1251f749f6ab8768c5f32548e5b14.svg",
+    "static/media/streamlit.svg": "./static/media/streamlit.20367a351f949bdf73e1aeb720c91b97.svg",
+    "static/media/github-original.svg": "./static/media/github-original.3c903c66b2c5334c8c0b80567c4ea422.svg",
+    "static/media/openai.svg": "./static/media/openai.7cbf39b08f508de52c81ca321b33d1c6.svg",
+    "static/media/javascript-original.svg": "./static/media/javascript-original.4c1b5332c1b1057928f6f06cf972c91c.svg",
     "index.html": "./index.html",
-    "main.4b9ae21d.css.map": "./static/css/main.4b9ae21d.css.map",
-    "main.ff106ee0.js.map": "./static/js/main.ff106ee0.js.map"
+    "static/media/css3.svg": "./static/media/css3.39769a8bd378bf410d6b381a8d88fa35.svg",
+    "static/media/html5.svg": "./static/media/html5.8664168d5bc90b1a24396f85aadbf623.svg",
+    "static/media/vuejs.svg": "./static/media/vuejs.5dbb5590e89aba651db8315e1fcc21ff.svg",
+    "static/media/pandas.svg": "./static/media/pandas.8a4f8462a509f547f1fcb512a3b48a33.svg",
+    "static/media/colab.svg": "./static/media/colab.38e9a14fb9f9aad5984a378537b09a84.svg",
+    "static/media/aws.svg": "./static/media/aws.9be71ca898c3ad7b7c6251285e8e09c0.svg",
+    "static/media/pytorch-original.svg": "./static/media/pytorch-original.0eda7da13fbfd4300cd9ab4c814763e3.svg",
+    "static/media/jupyter.svg": "./static/media/jupyter.c88b378aa4c042e376257263404e400a.svg",
+    "static/media/langchain.svg": "./static/media/langchain.f081b5d4285ac6a9fdf103893d9c9d89.svg",
+    "static/media/java.svg": "./static/media/java.162f31a1d101363fb1e8bf0737f3d948.svg",
+    "static/media/xgboost.svg": "./static/media/xgboost.35c6e39a22712004e505968994bdd32d.svg",
+    "static/media/keras.svg": "./static/media/keras.10eef405b6af636570cf3371a4e17f1a.svg",
+    "static/media/numpy.svg": "./static/media/numpy.5174f5f787f41b7cf8674d7ba9194db0.svg",
+    "static/media/seaborn.svg": "./static/media/seaborn.c8ee199546d481fc48ec4efd47289b69.svg",
+    "static/media/tensorflow.svg": "./static/media/tensorflow.724924b4f12aa12c8f411e90c573f481.svg",
+    "static/media/git.svg": "./static/media/git.9d8a84d89cda7f39748a2a590143e23f.svg",
+    "static/media/fastapi.svg": "./static/media/fastapi.a1318509a9feab702f1dec586f1bb280.svg",
+    "static/media/plotly.svg": "./static/media/plotly.627c491f7cdf7c87ea32d7728bed80ca.svg",
+    "static/media/matplotlib.svg": "./static/media/matplotlib.319bec5db33da453aa544edd6fc8097b.svg",
+    "main.629cc807.css.map": "./static/css/main.629cc807.css.map",
+    "main.33be4e3f.js.map": "./static/js/main.33be4e3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b9ae21d.css",
-    "static/js/main.ff106ee0.js"
+    "static/css/main.629cc807.css",
+    "static/js/main.33be4e3f.js"
   ]
 }
