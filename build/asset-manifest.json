@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.629cc807.css",
-    "main.js": "./static/js/main.33be4e3f.js",
+    "main.js": "./static/js/main.05e8c38f.js",
     "static/media/postgresql.svg": "./static/media/postgresql.7bc394e86ea1f692d59a3d484ad156af.svg",
     "static/media/flask.svg": "./static/media/flask.c084b9349458e09e6559ca851f06e2b2.svg",
     "static/media/scikit-learn.svg": "./static/media/scikit-learn.73b2a863dc9eea5d16c9c271fc70605f.svg",
@@ -36,10 +36,10 @@
     "static/media/plotly.svg": "./static/media/plotly.627c491f7cdf7c87ea32d7728bed80ca.svg",
     "static/media/matplotlib.svg": "./static/media/matplotlib.319bec5db33da453aa544edd6fc8097b.svg",
     "main.629cc807.css.map": "./static/css/main.629cc807.css.map",
-    "main.33be4e3f.js.map": "./static/js/main.33be4e3f.js.map"
+    "main.05e8c38f.js.map": "./static/js/main.05e8c38f.js.map"
   },
   "entrypoints": [
     "static/css/main.629cc807.css",
-    "static/js/main.33be4e3f.js"
+    "static/js/main.05e8c38f.js"
   ]
 }

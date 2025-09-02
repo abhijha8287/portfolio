@@ -27,6 +27,15 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=250&fit=crop"
     },
     {
+      title: "Engage2Value: From Clicks to Conversions",
+      description: "competition, building and deploying predictive machine learning models for customer purchase value estimation based on multi-session digital data.",
+      liveLink: "",
+      githubLink: "https://www.kaggle.com/competitions/engage-2-value-from-clicks-to-conversions/overview",
+      techStack: ["Python", "Kaggle", "Classification", "Pandas", "Scikit-learn", "Xgboost", "Feature Engineering"],
+      image: '/image.png'
+
+    },
+    {
       title: "Sentiment Responder",
       description: "Sentiment analysis and response from user reviews using advanced NLP techniques.",
       liveLink: "https://sentimentresponder.streamlit.app",
@@ -81,30 +90,6 @@ const Projects = () => {
       githubLink: "https://github.com/abhijha8287/careerchatbot",
       techStack: ["Streamlit", "Python", "OpenAI API", "LangChain", "RAG", "Vector Store", "Retriever", "Faiss"],
       image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Car Price Prediction",
-      description: "Predict the selling price of a car using various features like year, fuel type, seller type, and more.\n\nData cleaning and encoding, feature selection, models: Linear Regression, Random Forest, XGBoost, evaluation: R² Score, RMSE.",
-      liveLink: "https://github.com/abhijha8287/CodeAlpha_project",
-      githubLink: "https://github.com/abhijha8287/CodeAlpha_project",
-      techStack: ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn", "Linear Regression", "R² Score"],
-      image: "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Flower Classification",
-      description: "Classify flowers into categories based on input features.\n\nPreprocessing and feature engineering, classification using Random Forest and XGBoost, evaluation using confusion matrix.",
-      liveLink: "https://github.com/abhijha8287/CodeAlpha_project",
-      githubLink: "https://github.com/abhijha8287/CodeAlpha_project",
-      techStack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Logistic Regression", "Decision Tree", "K Nearest Neighbors", "Confusion Matrix"],
-      image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?w=400&h=250&fit=crop"
-    },
-    {
-      title: "Sales Prediction",
-      description: "Predict future sales based on dataset features.\n\nData preprocessing, regression models: Linear Regression, Random Forest, XGBoost, metrics: R² Score, RMSE.",
-      liveLink: "https://github.com/abhijha8287/CodeAlpha_project",
-      githubLink: "https://github.com/abhijha8287/CodeAlpha_project",
-      techStack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Linear Regression", "R² Score"],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop"
     }
   ];
 
