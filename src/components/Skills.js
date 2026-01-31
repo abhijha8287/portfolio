@@ -53,29 +53,48 @@ const Skills = () => {
       ]
     },
     {
-      category: "Frameworks & Libraries",
+      category: "AI/ML Libraries",
       skills: [
         { name: "Scikit-learn", logo: scikitLearnLogo },
         { name: "XGBoost", logo: xgboostLogo },
-        { name: "TensorFlow", logo: tensorflowLogo },
-        { name: "Keras", logo: kerasLogo },
-        { name: "PyTorch", logo: pytorchLogo },
-        { name: "NLP", logo: null },
-        { name: "Text-Processing", logo: null },
-        { name: "Hugging Face", logo: null },
-        { name: "LangChain", logo: langchainLogo },
-        { name: "VectorDB", logo: null },
-        { name: "LangGraph", logo: null },
-        { name: "CrewAI", logo: null },
         { name: "Pandas", logo: pandasLogo },
         { name: "NumPy", logo: numpyLogo },
         { name: "Matplotlib", logo: matplotlibLogo },
         { name: "Seaborn", logo: seabornLogo },
         { name: "Plotly", logo: plotlyLogo },
-        { name: "React.js", logo: reactLogo },
+        { name: "Hugging Face", logo: null },
+      ]
+    },
+    {
+      category: "AI/ML Frameworks",
+      skills: [
+        { name: "TensorFlow", logo: tensorflowLogo },
+        { name: "Keras", logo: kerasLogo },
+        { name: "PyTorch", logo: pytorchLogo },
+        { name: "LangChain", logo: langchainLogo },
+        { name: "LangGraph", logo: null },
+        { name: "CrewAI", logo: null },
+        { name: "VectorDB", logo: null },
+      ]
+    },
+    {
+      category: "NLP Frameworks & Libraries",
+      skills: [
+        { name: "NLP", logo: null },
+        { name: "Text-Processing", logo: null },
+        { name: "Hugging Face", logo: null },
+        { name: "LangChain", logo: langchainLogo },
+      ]
+    },
+    {
+      category: "Web Dev Frameworks",
+      skills: [
         { name: "Vue.js", logo: vuejsLogo },
         { name: "Streamlit", logo: streamlitLogo },
         { name: "Flask", logo: flaskLogo },
+        { name: "FastAPI", logo: fastapiLogo },
+        { name: "MERN Stack", logo: null },
+        { name: "Next.js", logo: null },
       ]
     },
     {
@@ -88,15 +107,23 @@ const Skills = () => {
         { name: "Git", logo: gitLogo },
         { name: "GitHub", logo: githubLogo },
         { name: "Docker", logo: dockerLogo },
-        { name: "FastAPI", logo: fastapiLogo },
         { name: "AWS", logo: awsLogo },
+        { name: "Postman", logo: postmanLogo },
+        { name: "PostgreSQL", logo: postgresqlLogo },
       ]
     },
     {
-      category: "Other Technologies",
+      category: "ML Deployment & MLOps",
       skills: [
-        { name: "Postman", logo: postmanLogo },
-        { name: "PostgreSQL", logo: postgresqlLogo },
+        { name: "Model Deployment", logo: null },
+        { name: "Model Versioning", logo: gitLogo },
+        { name: "Model Monitoring", logo: null },
+        { name: "CI/CD Pipelines", logo: githubLogo },
+        { name: "Kubernetes", logo: null },
+        { name: "Kubeflow", logo: null },
+        { name: "MLflow", logo: null },
+        { name: "DVC", logo: null },
+        { name: "RESTful API Deployment", logo: fastapiLogo },
       ]
     }
   ];

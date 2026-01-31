@@ -9,80 +9,108 @@ const Certifications = () => {
         threshold: 0.1,
     });
 
-    const certifications = [
-        {
-            title: "Deep Learning: Beginner to Advanced",
-            issuer: "Codebasics",
-            issuedDate: "Aug 2025",
-            credentialId: "CB-85-152114",
-            skills: ["Deep Learning", "Neural Networks", "TensorFlow", "Keras"],
-            category: "AI/ML"
-        },
-        {
-            title: "Gen AI to Agentic AI with Business Projects",
-            issuer: "Codebasics",
-            issuedDate: "Aug 2025",
-            credentialId: "CB-90-152114",
-            skills: ["Generative AI", "Agentic AI", "Business Applications", "AI Projects"],
-            category: "AI/ML"
-        },
-        {
-            title: "Natural Language Processing",
-            issuer: "Codebasics",
-            issuedDate: "Aug 2025",
-            credentialId: "CB-89-152114",
-            skills: ["NLP", "Text Processing", "Language Models", "AI"],
-            category: "AI/ML"
-        },
-        {
-            title: "Master Machine Learning for Data Science",
-            issuer: "Codebasics",
-            issuedDate: "May 2025",
-            credentialId: "CB-69-152114",
-            skills: ["Machine Learning", "Data Science", "Algorithms", "Statistics"],
-            category: "AI/ML"
-        },
-        {
-            title: "Math and Statistics For AI, Data Science",
-            issuer: "Codebasics",
-            issuedDate: "Mar 2025",
-            credentialId: "CB-63-152114",
-            skills: ["Statistics", "Mathematics", "AI", "Data Science"],
-            category: "AI/ML"
-        },
-        {
-            title: "Python: Beginner to Advanced For Data Professionals",
-            issuer: "Codebasics",
-            issuedDate: "Mar 2025",
-            credentialId: "CB-48-152114",
-            skills: ["Python", "Programming", "Data Analysis", "Automation"],
-            category: "Programming"
-        },
-        {
-            title: "IIT Madras - MLT workshop",
-            issuer: "IIT Madras BS in Data Science Programme",
-            issuedDate: "Feb 2025",
-            credentialId: "MLT Workshop",
-            skills: ["Machine Learning Techniques", "NumPy", "Teamwork", "Data Science"],
-            category: "Workshop"
-        },
-        {
-            title: "SQL for Data Science",
-            issuer: "Codebasics",
-            issuedDate: "Jan 2025",
-            credentialId: "CB-82-152114",
-            skills: ["SQL", "Database", "Data Science", "Data Querying"],
-            category: "Programming"
-        },
-        {
-            title: "IIT Madras - Foundation Level Certificate",
-            issuer: "IIT Madras BS in Data Science Programme",
-            issuedDate: "May 2024",
-            credentialId: "Foundation Level",
-            skills: ["Statistics", "Mathematics", "Python", "Data Science Foundation"],
-            category: "Academic"
-        }
-    ];
+   const certifications = [
+  {
+    title: "Foundation Certificate",
+    issuer: "IIT Madras",
+    issuedDate: "May 2024",
+    credentialId: "Foundation Level",
+    skills: ["Statistics", "Mathematics", "Python", "Data Science Foundation"],
+    category: "Academic",
+    url: "https://your-link-here"
+  },
+  {
+    title: "Advance Certificate in Machine Learning and Data Science",
+    issuer: "IIT Madras",
+    issuedDate: "Jul 2025",
+    credentialId: "Advanced ML & DS",
+    skills: ["Machine Learning", "Data Science", "Model Building", "Analytics"],
+    category: "Academic",
+    url: "https://your-link-here"
+  },
+  {
+    title: "Diploma in Data Science",
+    issuer: "IIT Madras",
+    issuedDate: "Sep 2025",
+    credentialId: "Diploma DS",
+    skills: ["Data Science", "Statistics", "ML", "Data Analysis"],
+    category: "Academic",
+    url: "https://your-link-here"
+  },
+  {
+    title: "Diploma in Programming",
+    issuer: "IIT Madras",
+    issuedDate: "Sep 2025",
+    credentialId: "Diploma Programming",
+    skills: ["Programming", "Python", "Problem Solving", "Algorithms"],
+    category: "Academic",
+    url: "https://your-link-here"
+  },
+  {
+    title: "Deep Learning: Beginner to Advanced",
+    issuer: "Codebasics",
+    issuedDate: "Aug 2025",
+    credentialId: "CB-DL",
+    skills: ["Deep Learning", "Neural Networks", "TensorFlow", "Keras"],
+    category: "AI/ML",
+    url: "https://your-link-here"
+  },
+  {
+    title: "Gen AI to Agentic AI",
+    issuer: "Codebasics",
+    issuedDate: "Aug 2025",
+    credentialId: "CB-GENAI",
+    skills: ["Generative AI", "Agentic AI", "LLMs", "AI Projects"],
+    category: "AI/ML",
+    url: "https://your-link-here"
+  },
+  {
+    title: "Natural Language Processing",
+    issuer: "Codebasics",
+    issuedDate: "Aug 2025",
+    credentialId: "CB-NLP",
+    skills: ["NLP", "Text Processing", "Language Models"],
+    category: "AI/ML",
+    url: "https://your-link-here"
+  },
+  {
+    title: "Machine Learning",
+    issuer: "Codebasics",
+    issuedDate: "May 2025",
+    credentialId: "CB-ML",
+    skills: ["Machine Learning", "Algorithms", "Model Evaluation"],
+    category: "AI/ML",
+    url: "https://your-link-here"
+  },
+  {
+    title: "Maths and Stats for AI",
+    issuer: "Codebasics",
+    issuedDate: "Mar 2025",
+    credentialId: "CB-MATH",
+    skills: ["Statistics", "Probability", "Mathematics"],
+    category: "AI/ML",
+    url: "https://your-link-here"
+  },
+  {
+    title: "Python",
+    issuer: "Codebasics",
+    issuedDate: "Mar 2025",
+    credentialId: "CB-PY",
+    skills: ["Python", "Programming", "Automation"],
+    category: "Programming",
+    url: "https://your-link-here"
+  },
+  {
+    title: "SQL",
+    issuer: "Codebasics",
+    issuedDate: "Jan 2025",
+    credentialId: "CB-SQL",
+    skills: ["SQL", "Database", "Queries"],
+    category: "Programming",
+    url: "https://your-link-here"
+  }
+];
+
 
     const containerVariants = {
         hidden: { opacity: 0 },

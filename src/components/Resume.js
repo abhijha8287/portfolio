@@ -10,7 +10,7 @@ const Resume = () => {
   });
 
   const openResume = () => {
-    window.open('/abhishekjharesume.pdf', '_blank', 'noopener,noreferrer');
+    window.open('https://drive.google.com/file/d/1jValz4WiuG1VD0DhfTII-Al4Pff5cN-R/view', '_blank', 'noopener,noreferrer');
   };
 
   const highlights = [
@@ -90,7 +90,7 @@ const Resume = () => {
           <motion.p variants={itemVariants} className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
             Download my complete resume to learn more about my experience, skills, and achievements.
           </motion.p>
-          
+
           <motion.button
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
@@ -120,11 +120,11 @@ const Resume = () => {
               <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 dark:group-hover:bg-primary-800 transition-colors duration-200">
                 <highlight.icon className="w-8 h-8 text-primary-600 dark:text-primary-400" />
               </div>
-              
+
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                 {highlight.title}
               </h3>
-              
+
               <ul className="space-y-2 text-left">
                 {highlight.items.map((item, itemIndex) => (
                   <li key={itemIndex} className="flex items-start space-x-2">

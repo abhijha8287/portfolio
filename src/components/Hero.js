@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   const openResume = () => {
-    window.open('/abhishekjharesume.pdf', '_blank', 'noopener,noreferrer');
+    window.open('https://drive.google.com/file/d/1jValz4WiuG1VD0DhfTII-Al4Pff5cN-R/view', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -30,9 +30,9 @@ const Hero = () => {
           >
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-primary-500 to-purple-600 p-1">
               <div className="w-full h-full rounded-full overflow-hidden">
-                <img 
-                  src="/mypic.jpg" 
-                  alt="Abhishek Jha" 
+                <img
+                  src="/mypic.jpg"
+                  alt="Abhishek Jha"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -67,7 +67,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto"
           >
-            Passionate about creating innovative AI/ML applications and exploring the world of artificial intelligence. 
+            Passionate about creating innovative AI/ML applications and exploring the world of artificial intelligence.
             Currently pursuing BS in Data Science at IIT Madras.
           </motion.p>
 
@@ -87,7 +87,7 @@ const Hero = () => {
               <FiDownload className="w-5 h-5" />
               Download Resume
             </motion.button>
-            
+
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -115,7 +115,7 @@ const Hero = () => {
             >
               <FiGithub className="w-6 h-6" />
             </motion.a>
-            
+
             <motion.a
               whileHover={{ scale: 1.2, y: -2 }}
               href="https://linkedin.com/in/abhishekjha15"
@@ -125,7 +125,7 @@ const Hero = () => {
             >
               <FiLinkedin className="w-6 h-6" />
             </motion.a>
-            
+
             <motion.a
               whileHover={{ scale: 1.2, y: -2 }}
               href="mailto:abhijha8287@gmail.com"

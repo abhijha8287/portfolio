@@ -11,13 +11,31 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Parking Management System",
+      description: "Designed and developed a comprehensive Parking Management Web Application for IIT Madras MAD-2 course with Flask REST APIs, VueJS frontend, SQLite DB, Redis caching, RBAC, auto spot allocation, reservations, reports, and Celery background jobs.",
+      image: "https://images.unsplash.com/photo-1470224114660-3f6686c562eb?w=400&h=250&fit=crop",
+      techStack: ["Python", "Flask", "VueJS", "Redis", "SQLite", "Docker", "Celery"],
+      liveLink: "",
+      githubLink: "https://github.com/abhijha8287/mad2project"
+    },
+
+
+    {
       title: "Dogs vs Cats Image Classification",
       description: "Built and trained a deep Convolutional Neural Network (CNN) to classify dog and cat images using the Kaggle dataset.\n\nData augmentation, transfer learning, and model evaluation with accuracy and confusion matrix.",
-      liveLink: "",
       githubLink: "https://github.com/abhijha8287/ann",
       techStack: ["Python", "TensorFlow", "Keras", "CNN", "Computer Vision", "Kaggle", "Data Augmentation"],
       image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=250&fit=crop"
     },
+    {
+  title: "MLOps Pipeline for ML Model Deployment",
+  description: "Built an end-to-end MLOps pipeline for data ingestion, preprocessing, model training, evaluation, and artifact management using a modular src architecture. Containerized FastAPI with Docker and automated CI/CD using GitHub Actions and YAML workflows for reliable, reproducible model deployment.",
+  image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop",
+  techStack: ["Python", "FastAPI", "scikit-learn", "Docker", "GitHub Actions", "CI/CD", "YAML"],
+  liveLink: "",
+  githubLink: ""
+},
+
     {
       title: "Customer Churn Prediction (ANN)",
       description: "Developed an end-to-end customer churn prediction system using Artificial Neural Networks.\n\nFeature engineering, model training and evaluation, and deployment-ready pipeline.",
@@ -75,6 +93,15 @@ const Projects = () => {
       techStack: ["Python", "Streamlit", "LangChain", "OpenAI API", "Parallel Runnable"],
       image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&h=250&fit=crop"
     },
+    {
+  title: "MERN Stack Notes Application",
+  description : "Developed a full-stack MERN notes app with CRUD operations, REST APIs, MongoDB storage, and seamless React–Node communication using Axios. Built with scalable architecture for future ML/AI feature integration.",
+  image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=250&fit=crop",
+  techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "REST APIs", "Axios"],
+  liveLink: "",
+  githubLink: ""
+},
+
     {
       title: "Joke Generator",
       description: "Creates topic-based jokes with explanations using AI-powered humor generation.",
@@ -137,7 +164,7 @@ const Projects = () => {
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-2 gap-8"
         >
           {projects.map((project, index) => (
             <motion.div
@@ -162,7 +189,7 @@ const Projects = () => {
                   {project.title}
                 </h3>
 
-                <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
                   {project.description}
                 </p>
 
