@@ -11,6 +11,14 @@ const Experience = () => {
 
     const experiences = [
         {
+            company: "Trackleo Technologies Pvt. Ltd.",
+            location: "Remote",
+            role: "Data Scientist",
+            duration: "Feb 2026 – Present",
+            description: "Working as a Data Scientist, building and deploying machine learning models, performing advanced data analysis, and delivering actionable insights to drive product decisions and business outcomes.",
+            skills: ["Data Science", "Machine Learning", "Python", "Data Analysis", "Predictive Modeling", "SQL", "Visualization"]
+        },
+        {
             company: "AtliQ Technology",
             location: "Virtual",
             role: "Data Scientist (Internship)",
@@ -25,6 +33,22 @@ const Experience = () => {
             duration: "Nov 2025",
             description: "Designed end-to-end medical imaging systems including patient dashboards (PDF comparison, MRI/segmentation visualization, 3D scan exploration), headless 3D Slicer pipelines (Windows, Docker, Jupyter), and MCP-based automation integrated with Claude Desktop, along with pure-Python Docker workflows for volume processing, visualization, and segmentation without external dependencies.",
             skills: ["Medical Imaging", "3D Slicer", "Headless Automation", "Python", "Docker", "MCP Servers", "Jupyter", "Visualization", "System Integration", "GenAI Tools", "Web Development", "FastAPI"]
+        },
+        {
+            company: "Web Karo India",
+            location: "Remote",
+            role: "AI Product Engineering Intern",
+            duration: "Apr 2025 – Sep 2025",
+            description: "Led AI product engineering initiatives, contributing to the design and development of intelligent product features, automating workflows, and integrating AI/ML capabilities into web-based platforms.",
+            skills: ["AI Product Engineering", "Python", "Machine Learning", "Web Development", "API Integration", "Automation"]
+        },
+        {
+            company: "Web Karo India",
+            location: "Remote",
+            role: "AI Product Engineering Intern",
+            duration: "Jan 2025 – Mar 2025",
+            description: "Worked on AI-driven product development tasks, supporting the engineering team in building and testing AI features, data pipelines, and proof-of-concept implementations for web products.",
+            skills: ["AI Development", "Python", "Data Pipelines", "Prototyping", "Web Integration", "Machine Learning"]
         }
     ];
 
