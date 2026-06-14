@@ -10,7 +10,10 @@ const Resume = () => {
   });
 
   const openResume = () => {
-    window.open('https://drive.google.com/file/d/1jValz4WiuG1VD0DhfTII-Al4Pff5cN-R/view', '_blank', 'noopener,noreferrer');
+    const link = document.createElement('a');
+    link.href = '/abhishekjharesume.pdf';
+    link.download = 'AbhishekJha_Resume.pdf';
+    link.click();
   };
 
   const highlights = [
