@@ -14,81 +14,81 @@ const Projects = () => {
       title: "AI Scientist",
       description: "Autonomous Scientific Discovery Platform. AI research assistant that discovers research gaps, generates hypotheses, designs experiments, and accelerates research through autonomous multi-agent workflows.",
       image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=250&fit=crop",
-      techStack: ["Multi-Agent AI", "Scientific Reasoning", "Hypothesis Generation", "Automated Experiment Planning", "Research Paper Generation", "Knowledge Graphs"],
+      techStack: ["Python", "LangChain", "LangGraph", "OpenAI API", "Vector Database", "FastAPI", "Knowledge Graphs"],
       liveLink: "",
-      githubLink: ""
+      githubLink: "https://github.com/abhijha8287/AI-Scientist"
     },
     {
       title: "Facility Trust Desk",
       description: "Healthcare Facility Intelligence Platform. Evaluates hospitals across ICU, NICU, Trauma, Oncology, Emergency, and Dialysis services using evidence-backed trust scoring and explainable AI.",
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=250&fit=crop",
-      techStack: ["Explainable AI", "Healthcare Analytics", "Hospital Verification", "Trust Scoring", "RAG Pipeline"],
+      techStack: ["Python", "LangChain", "RAG", "FastAPI", "PostgreSQL", "React", "Vector Database"],
       liveLink: "",
-      githubLink: ""
+      githubLink: "https://github.com/abhijha8287/facility-trust-desk"
     },
     {
       title: "Autonomous Incident Commander",
       description: "Infrastructure Incident Intelligence. Transforms infrastructure alerts into intelligent investigations — root cause identification, timeline generation, response coordination, and remediation recommendations.",
       image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop",
-      techStack: ["AI Incident Investigation", "Root Cause Analysis", "Timeline Generation", "Splunk Integration", "Jira Automation"],
+      techStack: ["Python", "LangChain", "Splunk API", "Jira API", "FastAPI", "React"],
       liveLink: "",
-      githubLink: ""
+      githubLink: "https://github.com/abhijha8287/Autonomous-Incident-Commander"
     },
     {
       title: "AI Construction Commander",
       description: "Enterprise Construction Intelligence. Enterprise platform for investigating construction delays, supply-chain bottlenecks, procurement risks, and contractor performance.",
       image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&h=250&fit=crop",
-      techStack: ["Delay Investigation", "Procurement Intelligence", "Risk Prediction", "Knowledge Graph", "Forecasting"],
+      techStack: ["Python", "Neo4j", "Pandas", "Scikit-learn", "FastAPI", "React"],
       liveLink: "",
-      githubLink: ""
+      githubLink: "https://github.com/abhijha8287/AI-Construction-Commander"
     },
     {
       title: "Career Agent AI",
       description: "AI Career Assistant. Discovers jobs, internships, and freelance opportunities while generating ATS-optimized resumes and personalized cover letters.",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=250&fit=crop",
-      techStack: ["Job Discovery", "ATS Resume Builder", "Cover Letter Generation", "Resume Ranking", "AI Matching"],
+      techStack: ["Python", "OpenAI API", "LangChain", "NLP", "FastAPI", "React"],
       liveLink: "",
-      githubLink: ""
+      githubLink: "https://github.com/abhijha8287/career-agent-ai"
     },
     {
       title: "Parallel AI",
       description: "Decision Intelligence Platform. Predicts multiple future outcomes, estimates regret probability, and evaluates opportunity costs before you commit.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
-      techStack: ["Future Simulation", "Decision Intelligence", "Regret Prediction", "Opportunity Cost", "Personalized AI"],
+      techStack: ["Python", "Monte Carlo Simulation", "OpenAI API", "FastAPI", "React"],
       liveLink: "",
-      githubLink: ""
+      githubLink: "https://github.com/abhijha8287/parallel-ai"
     },
     {
       title: "Future Self AI",
       description: "Predictive Decision Chrome Extension. Intercepts important online actions and predicts outcomes before purchases, investments, applications, or emails are submitted.",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=250&fit=crop",
-      techStack: ["Chrome Extension", "Regret Prediction", "Future Impact Report", "Decision Intelligence"],
+      techStack: ["TypeScript", "Chrome Extension API", "OpenAI API", "React"],
       liveLink: "",
-      githubLink: ""
+      githubLink: "https://github.com/abhijha8287/future-self-ai"
     },
     {
       title: "TradePulse AI",
       description: "AI Trading Intelligence Dashboard. Institutional flow analysis, volatility monitoring, news intelligence, watchlists, alerts, and AI-powered market insights.",
       image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=250&fit=crop",
-      techStack: ["Market Intelligence", "Institutional Flows", "News Analytics", "AI Insights"],
+      techStack: ["Python", "React", "WebSockets", "Node.js", "Data Visualization"],
       liveLink: "",
-      githubLink: ""
+      githubLink: "https://github.com/abhijha8287/tradepulse-ai"
     },
     {
       title: "RemitAI",
       description: "Cross-Border Remittance Optimizer. Finds the cheapest, fastest, and safest blockchain transfer routes using stablecoins across Ethereum and Layer-2 networks.",
       image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=400&h=250&fit=crop",
-      techStack: ["Blockchain Payments", "Stablecoin Routing", "Cost Optimization", "Smart Transfer Engine"],
+      techStack: ["TypeScript", "Solidity", "Ethereum", "Web3.js", "React"],
       liveLink: "",
-      githubLink: ""
+      githubLink: "https://github.com/abhijha8287/RemitAI"
     },
     {
       title: "STEMLab AI",
       description: "Virtual AI Laboratory for STEM Education. Intelligent tutoring, experiment simulations, automated lab reports, and personalized learning experiences.",
       image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=250&fit=crop",
-      techStack: ["AI Tutor", "Interactive Simulations", "Lab Reports", "Personalized Learning"],
+      techStack: ["TypeScript", "React", "Next.js", "OpenAI API", "Simulation Engine"],
       liveLink: "",
-      githubLink: ""
+      githubLink: "https://github.com/abhijha8287/STEMLab-AI"
     },
     {
       title: "Parking Management System",
