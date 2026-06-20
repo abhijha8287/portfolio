@@ -13,7 +13,9 @@ const Resume = () => {
     const link = document.createElement('a');
     link.href = '/abhishekjharesume.pdf';
     link.download = 'AbhishekJha_Resume.pdf';
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   const highlights = [
