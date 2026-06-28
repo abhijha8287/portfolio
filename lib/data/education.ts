@@ -12,10 +12,10 @@ export const EDUCATION: EducationEntry[] = [
     id: "iitm-bs",
     institution: "Indian Institute of Technology, Madras",
     credential: "B.S. in Data Science and Applications",
-    period: "Sep 2023 – Present",
+    period: "September 2023 - May 2026",
     location: "Chennai, Tamil Nadu",
     description:
-      "Undergraduate degree covering data science, machine learning, deep learning, and software engineering fundamentals, awarded by India's premier engineering institute.",
+      "Data science, machine learning, deep learning, programming, statistics, and software engineering coursework from IIT Madras.",
   },
 ];
 

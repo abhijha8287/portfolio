@@ -2,16 +2,17 @@ import { withBasePath } from "@/lib/base-path";
 
 export const SITE = {
   name: "Abhishek Jha",
-  url: "https://abhishekjha.dev",
-  tagline: "AI Engineer & Agentic AI Developer",
+  url: "https://abhijha8287.github.io/portfolio",
+  tagline: "AI Engineer, AI Web Developer, Machine Learning Engineer",
   description:
-    "Abhishek Jha is an AI Engineer building production AI systems across LLMs, agentic AI, computer vision, and full-stack web development. B.S. Data Science and Applications, IIT Madras.",
+    "Abhishek Jha is an AI Engineer and AI Web Developer building production-ready AI products with LLMs, RAG, multi-agent systems, deep learning, computer vision, and full-stack web development.",
   keywords: [
     "Abhishek Jha",
     "AI Engineer",
+    "AI Web Developer",
     "Machine Learning Engineer",
-    "LLM Engineer",
     "Agentic AI Developer",
+    "LLM Engineer",
     "Computer Vision Engineer",
     "IIT Madras",
     "Data Scientist",
@@ -21,38 +22,49 @@ export const SITE = {
 export const PROFILE = {
   name: "Abhishek Jha",
   initials: "AJ",
+  headline: "AI Engineer • AI Web Developer • Machine Learning Engineer • Agentic AI Developer",
+  shortPitch:
+    "I turn data into insights, and insights into AI systems that ship across web development, machine learning, deep learning, LLMs, agentic AI, and computer vision.",
   roles: [
     "AI Engineer",
+    "AI Web Developer",
     "Machine Learning Engineer",
-    "LLM Engineer",
     "Agentic AI Developer",
+    "LLM Engineer",
     "Computer Vision Engineer",
-    "Production AI Builder",
+    "Full-Stack AI Builder",
   ],
-  location: "New Delhi, India",
+  location: "Delhi, India",
   secondaryLocation: "Chennai, India",
   email: "abhijha8287@gmail.com",
   phone: "+91 8287706259",
   avatar: withBasePath("/images/profile.jpg"),
   resumeUrl: withBasePath("/resume.pdf"),
   bio: [
-    "I turn data into insights — and insights into AI systems that actually ship, not demo-only AI. I work across AI engineering, web development, machine learning, and agentic AI.",
-    "Currently a Data Scientist at Trackleo Technologies, where I'm building the company's first production AI-powered platform from the ground up. Before that, I built medical imaging tools at IIT Madras's Sudha Gopalakrishnan Brain Centre, computer vision systems as an intern at AtliQ Technologies, and an AI-powered productivity platform at Web Karo India.",
-    "I care about AI that solves real problems for real people — not AI that just looks good in a demo.",
+    "I am an IIT Madras Data Science and Applications graduate focused on building end-to-end AI products with Python, LLMs, RAG, multi-agent systems, deep learning, and computer vision.",
+    "Currently, I work as a Data Scientist at Trackleo Technologies, where I engineered a five-class retinal disease classifier and helped launch the company's first AI-powered web platform in under three months.",
+    "I care about AI that solves real problems for real people: healthcare intelligence, automation, decision support, scientific workflows, and production-ready full-stack AI tools.",
   ],
   focusAreas: [
     "Agentic AI",
     "LLMs",
-    "Web Development",
+    "RAG Systems",
+    "AI Web Apps",
     "Computer Vision",
-    "Machine Learning",
+    "Medical Imaging",
     "MLOps",
     "Cloud AI",
-    "Full Stack AI",
+    "Full-Stack AI",
+  ],
+  stats: [
+    { value: "11", label: "MCP tools built for 3D Slicer" },
+    { value: "99.8%", label: "fruit classifier validation accuracy" },
+    { value: "60%", label: "faster MRI exploration workflows" },
+    { value: "3 mo", label: "to launch Trackleo's AI platform" },
   ],
   goals: {
     statement:
-      "To build production-scale AI systems that solve meaningful real-world problems in Healthcare, Finance, Education, Scientific Research, and Enterprise Automation — while contributing to the advancement of Artificial Intelligence.",
+      "To build production-scale AI systems that solve meaningful real-world problems in healthcare, finance, education, scientific research, and enterprise automation while contributing to the advancement of artificial intelligence.",
     currentlyLearning: [
       "Advanced Multi-Agent Systems",
       "AI Scientist Workflows",
@@ -64,9 +76,9 @@ export const PROFILE = {
     ],
     priorities: [
       "Build production-scale AI products",
-      "Publish open-source Agentic AI frameworks",
+      "Publish open-source agentic AI frameworks",
       "Advance data-driven AI solutions",
-      "Contribute to AI Scientist research",
+      "Contribute to AI scientist research",
       "Share knowledge through technical blogs",
       "Contribute to impactful open-source projects",
     ],
@@ -77,6 +89,7 @@ export const SOCIAL = {
   github: "https://github.com/abhijha8287",
   linkedin: "https://www.linkedin.com/in/abhishekjha15/",
   email: `mailto:${PROFILE.email}`,
+  portfolio: SITE.url,
 };
 
 export const GITHUB_USERNAME = "abhijha8287";

@@ -52,7 +52,7 @@ export function Navbar() {
       }`}
     >
       <motion.nav
-        initial={{ y: -40, opacity: 0 }}
+        initial={false}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`mx-4 flex w-full max-w-4xl items-center justify-between rounded-full px-4 py-2.5 transition-all duration-300 ${
