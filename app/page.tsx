@@ -27,7 +27,7 @@ import { PROFILE, SOCIAL } from "@/lib/data/profile";
 
 const featuredSkills = SKILL_CATEGORIES.slice(0, 8);
 const projectShowcase = FEATURED_PROJECTS.slice(0, 9);
-const otherProjects = OTHER_PROJECTS.slice(0, 6);
+const otherProjects = OTHER_PROJECTS.slice(0, 12);
 
 function SectionShell({
   id,
