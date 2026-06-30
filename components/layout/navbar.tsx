@@ -55,15 +55,15 @@ export function Navbar() {
         initial={false}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`mx-4 flex w-full max-w-4xl items-center justify-between rounded-full px-4 py-2.5 transition-all duration-300 ${
-          scrolled ? "glass shadow-[0_8px_40px_-12px_rgba(0,0,0,0.6)]" : "border border-transparent"
+        className={`mx-4 flex w-full max-w-4xl items-center justify-between rounded-full px-3.5 py-2.5 transition-all duration-300 ${
+          scrolled ? "glass shadow-[0_10px_44px_-18px_rgba(0,0,0,0.75)]" : "border border-transparent"
         }`}
       >
         <Link
           href="#home"
-          className="flex items-center gap-2 rounded-full px-2 py-1 text-sm font-semibold tracking-tight"
+          className="flex items-center gap-2 rounded-full px-2 py-1 text-sm font-semibold tracking-tight transition-opacity hover:opacity-85"
         >
-          <span className="relative flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-neon-blue via-neon-purple to-neon-cyan text-[11px] font-bold text-black">
+            <span className="relative flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-neon-blue via-neon-purple to-neon-cyan text-[11px] font-bold text-black shadow-[0_0_24px_-8px_var(--neon-cyan)]">
             {PROFILE.initials}
           </span>
           <span className="hidden sm:inline">{PROFILE.name}</span>
@@ -83,7 +83,7 @@ export function Navbar() {
                 {active === link.href && (
                   <motion.span
                     layoutId="nav-active"
-                    className="absolute inset-0 rounded-full bg-white/[0.06]"
+                    className="absolute inset-0 rounded-full bg-white/[0.08] ring-1 ring-white/10"
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   />
                 )}
@@ -94,7 +94,7 @@ export function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-2 md:flex">
-          <Button asChild size="sm" className="rounded-full">
+          <Button asChild size="sm" className="rounded-full px-3.5">
             <a href={PROFILE.resumeUrl} download>
               <Download className="size-3.5" />
               Resume

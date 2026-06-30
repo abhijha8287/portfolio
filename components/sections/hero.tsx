@@ -28,15 +28,15 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative isolate flex min-h-[100svh] items-center overflow-hidden px-4 pt-28 pb-16 sm:px-6"
+      className="relative isolate flex min-h-[100svh] items-center overflow-hidden px-4 pt-24 pb-16 sm:px-6 lg:pt-28"
     >
       <AuroraBackground />
       <div className="absolute inset-0 -z-[1] opacity-60">
         <NeuralFieldLazy />
       </div>
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_10%,rgba(96,165,250,0.18),transparent_34%),linear-gradient(to_bottom,transparent,transparent_58%,var(--background))]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_26%_22%,rgba(103,232,249,0.16),transparent_30%),radial-gradient(circle_at_74%_18%,rgba(96,165,250,0.14),transparent_28%),linear-gradient(to_bottom,transparent,transparent_58%,var(--background))]" />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
         <motion.div
           initial={false}
           animate="show"
@@ -56,15 +56,16 @@ export function Hero() {
             </span>
           </motion.div>
 
-          <motion.p variants={fadeUp} className="mt-7 max-w-full break-words text-xs font-medium uppercase leading-6 tracking-[0.12em] text-neon-cyan sm:text-sm sm:tracking-[0.28em]">
+          <motion.p variants={fadeUp} className="mt-6 max-w-full break-words text-xs font-medium uppercase leading-6 tracking-[0.12em] text-neon-cyan sm:text-sm sm:tracking-[0.24em]">
             {PROFILE.headline}
           </motion.p>
 
           <motion.h1
             variants={fadeUp}
-            className="mt-4 max-w-full break-words text-4xl font-semibold leading-[1.03] tracking-tight text-foreground sm:max-w-3xl sm:text-6xl lg:text-7xl"
+            className="mt-4 max-w-full break-words text-4xl font-semibold leading-[1.02] tracking-tight text-foreground sm:max-w-3xl sm:text-6xl lg:text-[4.9rem]"
           >
-            Building AI products that move from demo to deployment.
+            Building AI products that move from demo to{" "}
+            <span className="text-gradient">deployment.</span>
           </motion.h1>
 
           <motion.div variants={fadeUp} className="mt-6">
@@ -102,7 +103,7 @@ export function Hero() {
             </Magnetic>
           </motion.div>
 
-          <motion.div variants={fadeUp} className="mt-8 flex flex-wrap gap-3 text-sm text-muted-foreground">
+          <motion.div variants={fadeUp} className="mt-7 flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground">
             <a className="inline-flex items-center gap-2 hover:text-foreground" href={SOCIAL.github} target="_blank" rel="noopener noreferrer">
               <FaGithub className="size-4" />
               GitHub
@@ -124,9 +125,9 @@ export function Hero() {
           transition={{ duration: 0.8, ease: smoothEase, delay: 0.25 }}
           className="relative mx-auto min-w-0 w-full max-w-sm lg:ml-auto xl:max-w-md"
         >
-          <div className="absolute -inset-8 -z-10 rounded-[2rem] bg-[radial-gradient(circle,rgba(103,232,249,0.2),transparent_62%)] blur-2xl" />
-          <div className="glass-card overflow-hidden rounded-3xl border-white/10 bg-white/[0.045] p-4 shadow-2xl shadow-black/40">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
+          <div className="absolute -inset-8 -z-10 rounded-[2rem] bg-[radial-gradient(circle,rgba(103,232,249,0.22),transparent_62%)] blur-2xl" />
+          <div className="glass-card overflow-hidden rounded-[1.75rem] border-white/10 bg-white/[0.045] p-3 shadow-2xl shadow-black/40 sm:p-4">
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.35rem] bg-muted">
               <Image
                 src={PROFILE.avatar}
                 alt={`${PROFILE.name} profile photo`}
@@ -143,7 +144,7 @@ export function Hero() {
 
             <div className="mt-4 grid grid-cols-2 gap-3">
               {PROFILE.stats.map((stat) => (
-                <div key={stat.label} className="rounded-2xl border border-white/10 bg-black/20 p-3 xl:p-4">
+                <div key={stat.label} className="rounded-2xl border border-white/10 bg-black/25 p-3 transition-colors hover:border-neon-cyan/30 xl:p-4">
                   <p className="text-xl font-semibold text-gradient xl:text-2xl">{stat.value}</p>
                   <p className="mt-1 text-[11px] leading-relaxed text-muted-foreground xl:text-xs">{stat.label}</p>
                 </div>

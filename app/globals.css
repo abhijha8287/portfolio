@@ -67,7 +67,7 @@
   --border: oklch(0.9 0.01 270);
   --input: oklch(0.9 0.01 270);
   --ring: oklch(0.6 0.22 264);
-  --radius: 0.875rem;
+  --radius: 0.75rem;
 
   --neon-blue: #3b82f6;
   --neon-purple: #a855f7;
@@ -111,6 +111,10 @@
   body {
     @apply bg-background text-foreground antialiased;
   }
+  a,
+  button {
+    text-underline-offset: 4px;
+  }
   ::selection {
     background-color: color-mix(in oklch, var(--neon-blue) 35%, transparent);
     color: var(--foreground);
@@ -120,18 +124,30 @@
 @layer utilities {
   /* ---------- Glass / cards ---------- */
   .glass {
-    background: color-mix(in oklch, white 4%, transparent);
-    backdrop-filter: blur(20px) saturate(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(140%);
-    border: 1px solid color-mix(in oklch, white 10%, transparent);
+    background: linear-gradient(
+      135deg,
+      color-mix(in oklch, white 7%, transparent),
+      color-mix(in oklch, white 2%, transparent)
+    );
+    backdrop-filter: blur(18px) saturate(145%);
+    -webkit-backdrop-filter: blur(18px) saturate(145%);
+    border: 1px solid color-mix(in oklch, white 12%, transparent);
   }
   .glass-card {
     position: relative;
     border-radius: var(--radius-2xl);
-    background: color-mix(in oklch, white 4%, transparent);
-    backdrop-filter: blur(20px) saturate(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(140%);
-    border: 1px solid color-mix(in oklch, white 10%, transparent);
+    background:
+      linear-gradient(145deg, color-mix(in oklch, white 7%, transparent), transparent 48%),
+      color-mix(in oklch, white 3%, transparent);
+    backdrop-filter: blur(18px) saturate(145%);
+    -webkit-backdrop-filter: blur(18px) saturate(145%);
+    border: 1px solid color-mix(in oklch, white 12%, transparent);
+    box-shadow: 0 22px 70px -42px rgba(0, 0, 0, 0.9);
+    transition:
+      border-color 0.3s ease,
+      background 0.3s ease,
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
   }
   .glass-card::before {
     content: "";
@@ -154,6 +170,33 @@
   }
   .glass-card:hover::before {
     opacity: 1;
+  }
+  .glass-card:hover {
+    border-color: color-mix(in oklch, var(--neon-cyan) 35%, transparent);
+    box-shadow: 0 28px 90px -48px color-mix(in oklch, var(--neon-blue) 70%, black);
+  }
+
+  /* ---------- Premium surfaces ---------- */
+  .soft-divider {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      color-mix(in oklch, white 14%, transparent),
+      transparent
+    );
+  }
+  .spotlight {
+    position: absolute;
+    inset: -1px;
+    pointer-events: none;
+    border-radius: inherit;
+    background: radial-gradient(
+      600px circle at var(--x, 50%) var(--y, 0%),
+      color-mix(in oklch, var(--neon-cyan) 13%, transparent),
+      transparent 38%
+    );
+    opacity: 0.75;
   }
 
   /* ---------- Text gradient ---------- */

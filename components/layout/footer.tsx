@@ -11,19 +11,19 @@ const SOCIALS = [
 
 export function Footer() {
   return (
-    <footer className="relative mt-32 border-t border-white/10">
-      <div className="mx-auto max-w-6xl px-6 py-14">
+    <footer className="relative mt-24 border-t border-white/10">
+      <div className="mx-auto max-w-6xl px-6 py-12">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
-          <div className="max-w-sm">
+          <div className="max-w-md">
             <a href="#home" className="flex items-center gap-2 text-base font-semibold">
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-neon-blue via-neon-purple to-neon-cyan text-xs font-bold text-black">
                 {PROFILE.initials}
               </span>
               {PROFILE.name}
             </a>
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Building production AI systems across LLMs, agentic AI, computer vision, and
-              full-stack web development. Currently shipping at Trackleo Technologies.
+            <p className="mt-4 text-sm leading-7 text-muted-foreground">
+              Building production AI systems across LLMs, agentic AI, computer vision, and full-stack web development.
+              Currently shipping at Trackleo Technologies.
             </p>
             <div className="mt-5 flex items-center gap-3">
               {SOCIALS.map(({ href, label, icon: Icon }) => (

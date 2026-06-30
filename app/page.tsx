@@ -39,7 +39,7 @@ function SectionShell({
   className?: string;
 }) {
   return (
-    <section id={id} className={`relative mx-auto w-full max-w-6xl px-6 py-24 ${className}`}>
+    <section id={id} className={`relative mx-auto w-full max-w-6xl px-4 py-20 sm:px-6 lg:py-24 ${className}`}>
       {children}
     </section>
   );
@@ -56,20 +56,21 @@ function AccentPanel({ children, className = "" }: { children: ReactNode; classN
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-grid opacity-30" />
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-grid opacity-25" />
       <div className="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[42rem] bg-[radial-gradient(circle_at_50%_0%,rgba(96,165,250,0.16),transparent_58%)]" />
       <Hero />
 
-      <SectionShell id="about">
+      <SectionShell id="about" className="pt-20">
         <SectionHeading
           eyebrow="About"
           title="I build AI systems with product taste and deployment discipline."
           description="My work sits at the intersection of data science, AI engineering, web development, and production operations: models, APIs, interfaces, automation, and shipping."
         />
 
-        <div className="mt-14 grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="mt-12 grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
           <Reveal>
-            <AccentPanel className="h-full p-6 sm:p-8">
+            <AccentPanel className="h-full overflow-hidden p-6 sm:p-8">
+              <div className="spotlight" />
               <div className="flex items-center gap-3">
                 <span className="flex size-11 items-center justify-center rounded-2xl bg-neon-blue/10 text-neon-cyan">
                   <BrainCircuit className="size-5" />
@@ -84,9 +85,10 @@ export default function Home() {
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
+              <div className="soft-divider mt-7" />
               <div className="mt-7 grid gap-3 sm:grid-cols-2">
                 {PROFILE.stats.map((stat) => (
-                  <div key={stat.label} className="rounded-2xl border border-white/10 bg-black/20 p-4">
+                  <div key={stat.label} className="rounded-2xl border border-white/10 bg-black/25 p-4">
                     <p className="text-3xl font-semibold text-gradient">{stat.value}</p>
                     <p className="mt-1 text-sm text-muted-foreground">{stat.label}</p>
                   </div>
@@ -110,7 +112,7 @@ export default function Home() {
                   </Badge>
                 ))}
               </div>
-              <div className="mt-8 rounded-2xl border border-neon-blue/20 bg-neon-blue/5 p-5">
+              <div className="mt-8 rounded-2xl border border-neon-blue/20 bg-neon-blue/5 p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
                 <p className="text-xs uppercase tracking-[0.22em] text-neon-cyan">North star</p>
                 <p className="mt-3 text-sm leading-7 text-foreground/85">{PROFILE.goals.statement}</p>
               </div>
@@ -126,7 +128,7 @@ export default function Home() {
           description="From model development and RAG orchestration to backend APIs, interactive dashboards, MLOps, and GitHub Pages-ready frontends."
         />
 
-        <div className="mt-14 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {featuredSkills.map((skill, index) => (
             <Reveal key={skill.id} delay={index * 0.035}>
               <Card className="glass-card h-full border-white/10 bg-white/[0.03] transition-transform duration-300 hover:-translate-y-1">
@@ -177,14 +179,14 @@ export default function Home() {
           description="Selected builds that show the range: multi-agent production workflows, explainable healthcare AI, browser-native decision support, computer vision, and full-stack automation."
         />
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {projectShowcase.map((project, index) => (
             <Reveal key={project.id} delay={index * 0.035}>
               <Card className="glass-card group h-full border-white/10 bg-white/[0.035] transition-all duration-300 hover:-translate-y-1 hover:border-neon-cyan/35">
                 <CardHeader>
                   <div className="flex items-start justify-between gap-4">
                     <div>
-                      <Badge variant="outline" className="mb-4 border-white/10 bg-white/[0.04]">
+                      <Badge variant="outline" className="mb-4 border-white/10 bg-white/[0.04] text-neon-cyan">
                         {project.category}
                       </Badge>
                       <CardTitle className="text-xl">{project.title}</CardTitle>
@@ -205,13 +207,14 @@ export default function Home() {
                   <p className="text-sm font-medium text-neon-cyan">{project.tagline}</p>
                   <p className="mt-3 text-sm leading-7 text-muted-foreground">{project.description}</p>
                   {project.outcome ? (
-                    <div className="mt-5 rounded-2xl border border-neon-cyan/20 bg-neon-cyan/5 p-4">
+                    <div className="mt-5 rounded-2xl border border-neon-cyan/20 bg-neon-cyan/5 p-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
                       <p className="flex items-start gap-2 text-sm leading-6 text-foreground/85">
                         <Rocket className="mt-0.5 size-4 shrink-0 text-neon-cyan" />
                         {project.outcome}
                       </p>
                     </div>
                   ) : null}
+                  <div className="soft-divider mt-5" />
                   <div className="mt-5 flex flex-wrap gap-2">
                     {project.highlights.slice(0, 5).map((highlight) => (
                       <Badge key={highlight} variant="secondary" className="bg-white/[0.06] text-muted-foreground">
@@ -226,7 +229,7 @@ export default function Home() {
         </div>
 
         <Reveal className="mt-8">
-          <AccentPanel className="p-5">
+          <AccentPanel className="p-6">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-sm font-medium text-foreground">More builds</p>
@@ -244,7 +247,7 @@ export default function Home() {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-2xl border border-white/10 bg-white/[0.025] p-4 transition-colors hover:border-neon-blue/35 hover:bg-white/[0.06]"
+                  className="rounded-2xl border border-white/10 bg-white/[0.025] p-4 transition-all hover:-translate-y-0.5 hover:border-neon-blue/35 hover:bg-white/[0.06]"
                 >
                   <p className="font-medium">{project.title}</p>
                   <p className="mt-1 text-sm leading-6 text-muted-foreground">{project.tagline}</p>
@@ -262,7 +265,7 @@ export default function Home() {
           description="Hands-on work across healthcare AI, computer vision, medical imaging automation, AI product engineering, and production platform integration."
         />
 
-        <div className="mt-14 space-y-5">
+        <div className="mt-12 space-y-5">
           {EXPERIENCE.map((entry, index) => (
             <Reveal key={entry.id} delay={index * 0.05}>
               <Card className="glass-card border-white/10 bg-white/[0.035]">
@@ -294,7 +297,7 @@ export default function Home() {
                     </div>
                     <div className="grid gap-3">
                       {entry.highlights.map((highlight) => (
-                        <p key={highlight} className="flex gap-3 rounded-2xl border border-white/10 bg-black/20 p-4 text-sm leading-6 text-muted-foreground">
+                        <p key={highlight} className="flex gap-3 rounded-2xl border border-white/10 bg-black/25 p-4 text-sm leading-6 text-muted-foreground transition-colors hover:border-neon-cyan/25">
                           <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-neon-cyan" />
                           {highlight}
                         </p>
@@ -315,7 +318,7 @@ export default function Home() {
           description="Completed B.Sc in Data Science and Applications from IIT Madras, strengthened by hands-on machine learning, NLP, generative AI, agentic AI, Python, SQL, and deployment work."
         />
 
-        <div className="mt-14 grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="mt-12 grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
           {EDUCATION.map((entry) => (
             <Reveal key={entry.id}>
               <AccentPanel className="h-full p-6 sm:p-8">
@@ -345,7 +348,7 @@ export default function Home() {
               </div>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {CERTIFICATIONS.map((certification) => (
-                  <div key={certification.id} className="rounded-2xl border border-white/10 bg-black/20 p-4">
+                  <div key={certification.id} className="rounded-2xl border border-white/10 bg-black/25 p-4">
                     <p className="font-medium">{certification.title}</p>
                     <p className="mt-1 text-sm text-muted-foreground">
                       {certification.issuer}
@@ -369,6 +372,7 @@ export default function Home() {
       <SectionShell id="contact" className="pb-12">
         <Reveal>
           <AccentPanel className="overflow-hidden p-8 text-center sm:p-12">
+            <div className="spotlight" />
             <div className="mx-auto flex size-14 items-center justify-center rounded-2xl bg-neon-blue/10 text-neon-cyan">
               <Target className="size-7" />
             </div>
