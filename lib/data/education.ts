@@ -11,11 +11,11 @@ export const EDUCATION: EducationEntry[] = [
   {
     id: "iitm-bs",
     institution: "Indian Institute of Technology, Madras",
-    credential: "B.S. in Data Science and Applications",
+    credential: "B.Sc in Data Science and Applications",
     period: "September 2023 - May 2026",
     location: "Chennai, Tamil Nadu",
     description:
-      "Data science, machine learning, deep learning, programming, statistics, and software engineering coursework from IIT Madras.",
+      "Completed B.Sc degree covering data science, machine learning, deep learning, programming, statistics, and software engineering from IIT Madras.",
   },
 ];
 
@@ -30,7 +30,7 @@ export type Certification = {
 export const CERTIFICATIONS: Certification[] = [
   {
     id: "iitm-bsc-cert",
-    title: "B.Sc Certificate (3rd Year)",
+    title: "B.Sc Degree in Data Science and Applications",
     issuer: "IIT Madras",
     date: "May 2026",
     type: "degree",

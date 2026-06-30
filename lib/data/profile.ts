@@ -5,7 +5,7 @@ export const SITE = {
   url: "https://abhijha8287.github.io/portfolio",
   tagline: "AI Engineer, AI Web Developer, Machine Learning Engineer",
   description:
-    "Abhishek Jha is an AI Engineer and AI Web Developer building production-ready AI products with LLMs, RAG, multi-agent systems, deep learning, computer vision, and full-stack web development.",
+    "Abhishek Jha is an IIT Madras B.Sc graduate, AI Engineer, and AI Web Developer building production-ready AI products with LLMs, RAG, multi-agent systems, deep learning, computer vision, and full-stack web development.",
   keywords: [
     "Abhishek Jha",
     "AI Engineer",
@@ -41,7 +41,7 @@ export const PROFILE = {
   avatar: withBasePath("/images/profile.jpg"),
   resumeUrl: withBasePath("/resume.pdf"),
   bio: [
-    "I am an IIT Madras Data Science and Applications graduate focused on building end-to-end AI products with Python, LLMs, RAG, multi-agent systems, deep learning, and computer vision.",
+    "I completed my B.Sc in Data Science and Applications from IIT Madras and now focus on building end-to-end AI products with Python, LLMs, RAG, multi-agent systems, deep learning, and computer vision.",
     "Currently, I work as a Data Scientist at Trackleo Technologies, where I engineered a five-class retinal disease classifier and helped launch the company's first AI-powered web platform in under three months.",
     "I care about AI that solves real problems for real people: healthcare intelligence, automation, decision support, scientific workflows, and production-ready full-stack AI tools.",
   ],
