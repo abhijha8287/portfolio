@@ -22,7 +22,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CERTIFICATIONS, EDUCATION, PROFESSIONAL_TOPICS } from "@/lib/data/education";
 import { EXPERIENCE } from "@/lib/data/experience";
 import { FEATURED_PROJECTS, OTHER_PROJECTS } from "@/lib/data/projects";
-import { DOMAIN_EXPERTISE, SKILL_CATEGORIES } from "@/lib/data/skills";
+import { SKILL_CATEGORIES } from "@/lib/data/skills";
 import { PROFILE, SOCIAL } from "@/lib/data/profile";
 
 const featuredSkills = SKILL_CATEGORIES.slice(0, 8);
@@ -133,19 +133,10 @@ export default function Home() {
             <Reveal key={skill.id} delay={index * 0.035}>
               <Card className="glass-card h-full border-white/10 bg-white/[0.03] transition-transform duration-300 hover:-translate-y-1">
                 <CardHeader>
-                  <div className="flex items-start justify-between gap-4">
-                    <CardTitle className="text-base">{skill.label}</CardTitle>
-                    <span className="rounded-full border border-white/10 px-2 py-1 text-xs text-neon-cyan">{skill.level}%</span>
-                  </div>
+                  <CardTitle className="text-base">{skill.label}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="h-1.5 overflow-hidden rounded-full bg-white/10">
-                    <div
-                      className="h-full rounded-full bg-gradient-to-r from-neon-blue via-neon-cyan to-neon-blue"
-                      style={{ width: `${skill.level}%` }}
-                    />
-                  </div>
-                  <div className="mt-5 flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {skill.items.slice(0, 8).map((item) => (
                       <Badge key={item} variant="secondary" className="bg-white/[0.06] text-muted-foreground">
                         {item}
@@ -157,19 +148,6 @@ export default function Home() {
             </Reveal>
           ))}
         </div>
-
-        <Reveal className="mt-8">
-          <AccentPanel className="p-5">
-            <p className="text-sm font-medium text-foreground">Domain expertise</p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {DOMAIN_EXPERTISE.map((domain) => (
-                <Badge key={domain} variant="outline" className="border-neon-blue/25 bg-neon-blue/5">
-                  {domain}
-                </Badge>
-              ))}
-            </div>
-          </AccentPanel>
-        </Reveal>
       </SectionShell>
 
       <SectionShell id="projects">
@@ -377,7 +355,7 @@ export default function Home() {
               <Target className="size-7" />
             </div>
             <Badge variant="outline" className="mt-6 border-neon-cyan/30 bg-neon-cyan/5">
-              Open to AI engineering, web AI, and product collaborations
+              Open to AI Engineering, MLE, Data Science, SWE & Agentic AI roles
             </Badge>
             <h2 className="mx-auto mt-5 max-w-3xl text-3xl font-semibold tracking-tight sm:text-5xl">
               Have an AI product, data problem, or agentic workflow worth building?

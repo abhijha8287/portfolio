@@ -22,13 +22,15 @@ export const SITE = {
 export const PROFILE = {
   name: "Abhishek Jha",
   initials: "AJ",
-  headline: "AI Engineer • AI Web Developer • Machine Learning Engineer • Agentic AI Developer",
+  headline: "AI Engineer • Machine Learning Engineer • Data Scientist • Software Engineer • Agentic AI Developer",
   shortPitch:
     "I turn data into insights, and insights into AI systems that ship across web development, machine learning, deep learning, LLMs, agentic AI, and computer vision.",
   roles: [
     "AI Engineer",
-    "AI Web Developer",
     "Machine Learning Engineer",
+    "Data Scientist",
+    "Software Engineer",
+    "AI Web Developer",
     "Agentic AI Developer",
     "LLM Engineer",
     "Computer Vision Engineer",

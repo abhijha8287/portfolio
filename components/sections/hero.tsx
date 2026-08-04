@@ -48,7 +48,7 @@ export function Hero() {
         >
           <motion.div variants={fadeUp} className="flex min-w-0 flex-wrap items-center gap-3">
             <Badge variant="outline" className="border-neon-cyan/30 bg-neon-cyan/10 px-3 py-1.5 text-neon-cyan">
-              Available for AI engineering work
+              Open to AI Engineering, MLE, Data Science, SWE & Agentic AI roles
             </Badge>
             <span className="inline-flex min-w-0 items-center gap-2 text-sm text-muted-foreground">
               <MapPin className="size-4 text-neon-blue" />

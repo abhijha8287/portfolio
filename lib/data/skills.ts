@@ -2,7 +2,6 @@ export type SkillCategory = {
   id: string;
   label: string;
   icon: string;
-  level: number;
   items: string[];
 };
 
@@ -11,14 +10,12 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     id: "languages",
     label: "Programming",
     icon: "Code2",
-    level: 92,
     items: ["Python", "SQL", "JavaScript", "TypeScript", "HTML5", "CSS3", "C"],
   },
   {
     id: "ai-ml-core",
     label: "Machine Learning",
     icon: "BrainCircuit",
-    level: 94,
     items: [
       "Machine Learning",
       "Deep Learning",
@@ -41,7 +38,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     id: "llm-engineering",
     label: "Generative AI & LLMs",
     icon: "Sparkles",
-    level: 93,
     items: [
       "OpenAI API",
       "Hugging Face Transformers",
@@ -61,14 +57,12 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     id: "computer-vision",
     label: "Computer Vision",
     icon: "ScanEye",
-    level: 91,
     items: ["Object Detection", "Image Classification", "Image Segmentation", "OCR", "OpenCV", "Medical Imaging", "Vision AI"],
   },
   {
     id: "nlp",
     label: "NLP",
     icon: "MessageSquareText",
-    level: 88,
     items: [
       "Text Preprocessing",
       "Embeddings",
@@ -84,7 +78,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     id: "ai-libraries",
     label: "AI / Data Libraries",
     icon: "Layers",
-    level: 91,
     items: [
       "Scikit-learn",
       "XGBoost",
@@ -104,7 +97,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     id: "web",
     label: "AI Web Development",
     icon: "LayoutTemplate",
-    level: 88,
     items: [
       "Next.js",
       "React.js",
@@ -124,7 +116,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     id: "backend",
     label: "Backend & APIs",
     icon: "Server",
-    level: 88,
     items: [
       "REST APIs",
       "Authentication",
@@ -140,14 +131,12 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     id: "databases",
     label: "Databases",
     icon: "Database",
-    level: 86,
     items: ["PostgreSQL", "SQLite", "MongoDB", "Redis", "SQL", "ChromaDB", "Qdrant", "Neo4j", "Vector Databases"],
   },
   {
     id: "cloud-devops",
     label: "Cloud & MLOps",
     icon: "Cloud",
-    level: 88,
     items: [
       "AWS",
       "GCP",
@@ -166,7 +155,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     id: "data-science",
     label: "Data Science",
     icon: "BarChart3",
-    level: 90,
     items: [
       "Data Cleaning",
       "EDA",
@@ -181,23 +169,8 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     id: "developer-tools",
     label: "Developer Tools",
     icon: "TerminalSquare",
-    level: 95,
     items: ["Git", "GitHub", "VS Code", "Jupyter Notebook", "Google Colab", "Postman", "Claude", "Codex", "Cursor", "GitHub Copilot"],
   },
-];
-
-export const DOMAIN_EXPERTISE = [
-  "Healthcare AI",
-  "Computer Vision",
-  "Medical Imaging",
-  "Agentic AI",
-  "Decision Intelligence",
-  "Scientific AI",
-  "Financial AI",
-  "Civic Technology",
-  "Construction Intelligence",
-  "Educational AI",
-  "Data Analytics",
 ];
 
 export const DEV_TOOLS = ["Jupyter Notebook", "Google Colab", "VS Code", "Git", "GitHub", "Postman", "Claude", "Codex"];
