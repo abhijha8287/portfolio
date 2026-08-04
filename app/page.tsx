@@ -26,7 +26,7 @@ import { SKILL_CATEGORIES } from "@/lib/data/skills";
 import { PROFILE, SOCIAL } from "@/lib/data/profile";
 
 const featuredSkills = SKILL_CATEGORIES.slice(0, 8);
-const projectShowcase = FEATURED_PROJECTS.slice(0, 9);
+const projectShowcase = FEATURED_PROJECTS;
 const otherProjects = OTHER_PROJECTS.slice(0, 12);
 
 function SectionShell({
@@ -259,7 +259,18 @@ export default function Home() {
                       <h3 className="mt-4 text-2xl font-semibold">{entry.role}</h3>
                       <p className="mt-2 flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
                         <BriefcaseBusiness className="size-4" />
-                        {entry.company}
+                        {entry.companyUrl ? (
+                          <a
+                            href={entry.companyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline decoration-white/20 underline-offset-4 transition-colors hover:text-neon-cyan"
+                          >
+                            {entry.company}
+                          </a>
+                        ) : (
+                          entry.company
+                        )}
                         <span className="text-white/20">/</span>
                         <MapPin className="size-4" />
                         {entry.location}

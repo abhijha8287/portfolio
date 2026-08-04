@@ -17,6 +17,26 @@ const GITHUB_PROFILE = "https://github.com/abhijha8287";
 
 export const PROJECTS: Project[] = [
   {
+    id: "pips-ai",
+    title: "Pips AI",
+    tagline: "AI-powered finance university and live MT5 trading platform",
+    description:
+      "A trading education and execution platform combining guided courses, a prop-firm marketplace, and a unified multi-account MetaTrader 5 terminal with an AI mentor guiding traders from their first lesson to live execution. Built solo, in parallel with a full-time Data Scientist role, for the founder behind Trackleo.",
+    outcome: "Shipped the MVP solo in 15 days; the live product crossed 1,000+ users within its first 2 months.",
+    highlights: [
+      "12 structured courses with quizzes, exams, and certification",
+      "40+ integrated prop-firm programs with side-by-side comparison",
+      "Live multi-account MT5 terminal with <30ms average routing latency and auto-failover",
+      "AI mentor guiding traders from first lesson to live execution",
+    ],
+    tech: ["Next.js", "TypeScript", "MetaTrader 5", "AI Mentor / LLM", "Real-Time Trading Infrastructure", "TradingView"],
+    category: "Fintech AI",
+    period: "June 2026 - Present",
+    github: "https://www.pipsai.online",
+    githubConfirmed: false,
+    featured: true,
+  },
+  {
     id: "butterfly-director-ai",
     title: "Butterfly Director AI",
     tagline: "Multiverse AI film studio with multi-agent direction",

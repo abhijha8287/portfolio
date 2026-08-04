@@ -1,6 +1,7 @@
 export type ExperienceEntry = {
   id: string;
   company: string;
+  companyUrl?: string;
   role: string;
   period: string;
   location: string;
@@ -15,6 +16,7 @@ export const EXPERIENCE: ExperienceEntry[] = [
   {
     id: "trackleo",
     company: "Trackleo Technologies Pvt. Ltd.",
+    companyUrl: "https://trackleo.com",
     role: "Data Scientist",
     period: "February 2026 - Present",
     location: "Hybrid",
