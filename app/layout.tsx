@@ -25,6 +25,7 @@ export const metadata: Metadata = {
       { url: withBasePath("/favicon.ico"), sizes: "any" },
       { url: withBasePath("/icon.png"), type: "image/png", sizes: "32x32" },
     ],
+    apple: { url: withBasePath("/apple-touch-icon.png"), sizes: "180x180" },
   },
 };
 
