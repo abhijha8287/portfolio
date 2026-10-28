@@ -18,10 +18,10 @@ export const EXPERIENCE: ExperienceEntry[] = [
     company: "Trackleo Technologies Pvt. Ltd.",
     companyUrl: "https://trackleo.com",
     role: "Data Scientist",
-    period: "February 2026 - Present",
+    period: "February 2026 - July 2026",
     location: "Hybrid",
     type: "Full-time",
-    current: true,
+    current: false,
     summary:
       "Founding AI engineering role focused on production-grade healthcare AI, computer vision, medical imaging, and the company's first AI-powered web platform.",
     highlights: [

@@ -77,7 +77,7 @@ export default function Home() {
                 </span>
                 <div>
                   <p className="text-sm text-muted-foreground">Professional summary</p>
-                  <h3 className="text-2xl font-semibold">IIT Madras B.Sc graduate building real AI products.</h3>
+                  <h3 className="text-2xl font-semibold">IIT Madras BS student building real AI products.</h3>
                 </div>
               </div>
               <div className="mt-7 space-y-5 text-sm leading-7 text-muted-foreground sm:text-base">
@@ -303,8 +303,8 @@ export default function Home() {
       <SectionShell id="certifications">
         <SectionHeading
           eyebrow="Education"
-          title="IIT Madras B.Sc degree, production AI specialization."
-          description="Completed B.Sc in Data Science and Applications from IIT Madras, strengthened by hands-on machine learning, NLP, generative AI, agentic AI, Python, SQL, and deployment work."
+          title="IIT Madras BS degree, production AI specialization."
+          description="Final year of the four-year BS in Data Science and Applications at IIT Madras (B.Sc completed 2026), strengthened by hands-on machine learning, NLP, generative AI, agentic AI, Python, SQL, and deployment work."
         />
 
         <div className="mt-12 grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">

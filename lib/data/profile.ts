@@ -5,7 +5,7 @@ export const SITE = {
   url: "https://abhijha8287.github.io/portfolio",
   tagline: "AI Engineer, AI Web Developer, Machine Learning Engineer",
   description:
-    "Abhishek Jha is an IIT Madras B.Sc graduate, AI Engineer, and AI Web Developer building production-ready AI products with LLMs, RAG, multi-agent systems, deep learning, computer vision, and full-stack web development.",
+    "Abhishek Jha is a final-year IIT Madras BS Data Science student (B.Sc completed 2026), AI Engineer, and AI Web Developer building production-ready AI products with LLMs, RAG, multi-agent systems, deep learning, computer vision, and full-stack web development.",
   keywords: [
     "Abhishek Jha",
     "AI Engineer",
@@ -43,8 +43,8 @@ export const PROFILE = {
   avatar: withBasePath("/images/profile.jpg"),
   resumeUrl: withBasePath("/resume.pdf"),
   bio: [
-    "I completed my B.Sc in Data Science and Applications from IIT Madras and now focus on building end-to-end AI products with Python, LLMs, RAG, multi-agent systems, deep learning, and computer vision.",
-    "Currently, I work as a Data Scientist at Trackleo Technologies, where I engineered a five-class retinal disease classifier and helped launch the company's first AI-powered web platform in under three months.",
+    "I am in the final year of the four-year BS in Data Science and Applications at IIT Madras (B.Sc completed in May 2026), and alongside it I focus on building end-to-end AI products with Python, LLMs, RAG, multi-agent systems, deep learning, and computer vision.",
+    "Previously, I worked as a Data Scientist at Trackleo Technologies, where I engineered a five-class retinal disease classifier and helped launch the company's first AI-powered web platform in under three months.",
     "I care about AI that solves real problems for real people: healthcare intelligence, automation, decision support, scientific workflows, and production-ready full-stack AI tools.",
   ],
   focusAreas: [

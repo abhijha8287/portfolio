@@ -4,7 +4,7 @@
 
 I turn data into insights, and insights into AI systems that ship — across web development, machine learning, deep learning, LLMs, agentic AI, and computer vision.
 
-I completed my B.Sc in Data Science and Applications from IIT Madras and now build end-to-end AI products with Python, LLMs, RAG, multi-agent systems, deep learning, and computer vision. I currently work as a Data Scientist at Trackleo Technologies, where I engineered a five-class retinal disease classifier and helped launch the company's first AI-powered web platform in under three months.
+I am in the final year of the four-year BS in Data Science and Applications at IIT Madras (B.Sc completed in May 2026) and build end-to-end AI products with Python, LLMs, RAG, multi-agent systems, deep learning, and computer vision. Previously I worked as a Data Scientist at Trackleo Technologies, where I engineered a five-class retinal disease classifier and helped launch the company's first AI-powered web platform in under three months.
 
 I care about AI that solves real problems for real people: healthcare intelligence, automation, decision support, scientific workflows, and production-ready full-stack AI tools.
 

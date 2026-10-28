@@ -11,11 +11,11 @@ export const EDUCATION: EducationEntry[] = [
   {
     id: "iitm-bs",
     institution: "Indian Institute of Technology, Madras",
-    credential: "B.Sc in Data Science and Applications",
-    period: "September 2023 - May 2026",
+    credential: "BS in Data Science and Applications (4-year, final year)",
+    period: "September 2023 - Expected 2027",
     location: "Chennai, Tamil Nadu",
     description:
-      "Completed B.Sc degree covering data science, machine learning, deep learning, programming, statistics, and software engineering from IIT Madras.",
+      "Four-year BS programme at IIT Madras. Completed the B.Sc degree in May 2026 after three years and now in the fourth (BS) year. Covers data science, machine learning, deep learning, programming, statistics, MLOps, and software engineering.",
   },
 ];
 
