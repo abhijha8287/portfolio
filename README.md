@@ -1,41 +1,42 @@
-# Hi, I'm Abhishek Jha 👋
+# Portfolio
 
-**AI Engineer · AI Web Developer · Machine Learning Engineer · Agentic AI Developer**
+Source for my personal site: https://abhijha8287.github.io/portfolio
 
-I turn data into insights, and insights into AI systems that ship — across web development, machine learning, deep learning, LLMs, agentic AI, and computer vision.
+## Why this exists
+One page that shows who I am, my experience, selected projects, skills and how to reach me, with a downloadable resume.
 
-I am in the final year of the four-year BS in Data Science and Applications at IIT Madras (B.Sc completed in May 2026) and build end-to-end AI products with Python, LLMs, RAG, multi-agent systems, deep learning, and computer vision. Previously I worked as a Data Scientist at Trackleo Technologies, where I engineered a five-class retinal disease classifier and helped launch the company's first AI-powered web platform in under three months.
+## What it does
+- Single static page: hero with key stats, experience, case studies, project grid, skills and education, contact
+- Follows the visitor's light or dark system setting; no theme toggle
+- Ships no client-side JavaScript of its own; the page is fully pre-rendered
+- Links that leave the page open in a new tab
+- Deploys to GitHub Pages on every push to `master`
 
-I care about AI that solves real problems for real people: healthcare intelligence, automation, decision support, scientific workflows, and production-ready full-stack AI tools.
+## Project structure
+```
+portfolio/
+├── app/
+│   ├── page.tsx       All page sections
+│   ├── layout.tsx     Fonts and metadata
+│   └── globals.css    Colour tokens and base styles
+├── lib/
+│   ├── data/          Profile, experience, projects, skills, education
+│   └── base-path.ts   GitHub Pages path helper
+├── public/            Resume PDF and images
+├── .github/workflows/ Build and deploy to GitHub Pages
+└── next.config.ts     Static export settings
+```
+To change content, edit the files in `lib/data/`; `site.ts` holds the hero, stats, case studies and project cards.
 
-- 🔭 Currently building: Agentic AI, LLMs, RAG systems, AI web apps, computer vision, medical imaging, MLOps, cloud AI
-- 🌱 Currently learning: multi-agent systems, AI scientist workflows, distributed AI infrastructure, enterprise RAG, AI evaluation frameworks
-- 📫 Reach me: [abhijha8287@gmail.com](mailto:abhijha8287@gmail.com) · [LinkedIn](https://www.linkedin.com/in/abhishekjha15/) · [GitHub](https://github.com/abhijha8287)
-- 📍 Delhi, India / Chennai, India
-
-## About this repo
-
-This is my personal portfolio site, built with Next.js 16 (App Router, Turbopack), React 19, Tailwind CSS 4, Framer Motion, and Three.js/React Three Fiber for the animated hero background.
-
-### Stack
-
-- **Framework:** Next.js 16 + React 19 + TypeScript
-- **Styling:** Tailwind CSS 4, shadcn/ui components
-- **Motion:** Framer Motion, GSAP
-- **3D:** Three.js via @react-three/fiber and @react-three/drei
-- **Deployment:** Static export to GitHub Pages via GitHub Actions
-
-### Getting started
-
+## Getting started
+Requirements: Node.js 20+.
 ```bash
-bun install
-bun run dev
+git clone https://github.com/abhijha8287/portfolio.git
+cd portfolio
+npm install
+npm run dev                                        # http://localhost:3000
+NEXT_PUBLIC_BASE_PATH=/portfolio npm run build     # static site in out/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it locally.
-
-### Build
-
-```bash
-bun run build
-```
+## Tech stack
+Next.js 16 (static export), React 19, TypeScript, Tailwind CSS 4, GitHub Pages, GitHub Actions
