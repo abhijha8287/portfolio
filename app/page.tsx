@@ -10,6 +10,9 @@ const NAV = [
   { href: "#contact", label: "Contact" },
 ];
 
+// Links that leave the page open in a new tab; in-page section links (#...) stay in place.
+const external = { target: "_blank", rel: "noopener noreferrer" } as const;
+
 const linkClass = "underline decoration-line underline-offset-4 transition-colors hover:text-accent hover:decoration-accent";
 
 function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
@@ -38,7 +41,7 @@ function Header() {
               {item.label}
             </a>
           ))}
-          <a href={SOCIAL.github} className="hidden whitespace-nowrap transition-colors hover:text-fg sm:inline">
+          <a href={SOCIAL.github} {...external} className="hidden whitespace-nowrap transition-colors hover:text-fg sm:inline">
             GitHub ↗
           </a>
         </nav>
@@ -92,7 +95,7 @@ function Experience() {
               <h3 className="font-medium">
                 {job.role} <span className="text-muted">·</span>{" "}
                 {job.companyUrl ? (
-                  <a href={job.companyUrl} className={linkClass}>
+                  <a href={job.companyUrl} {...external} className={linkClass}>
                     {job.company}
                   </a>
                 ) : (
@@ -124,7 +127,7 @@ function Projects() {
           <article key={study.title} className="rounded-lg border border-line p-5 sm:p-7">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h3 className="text-xl font-semibold">{study.title}</h3>
-              <a href={study.href} className={`text-sm ${linkClass}`}>
+              <a href={study.href} {...external} className={`text-sm ${linkClass}`}>
                 {study.linkLabel} ↗
               </a>
             </div>
@@ -157,6 +160,7 @@ function Projects() {
           <a
             key={project.title}
             href={project.href}
+            {...external}
             className="group rounded-lg border border-line p-5 transition-colors hover:border-muted"
           >
             <h3 className="font-medium">
@@ -170,7 +174,7 @@ function Projects() {
 
       <p className="mt-6 text-sm text-muted">
         More on{" "}
-        <a href={SOCIAL.github} className={linkClass}>
+        <a href={SOCIAL.github} {...external} className={linkClass}>
           GitHub
         </a>
         .
@@ -225,7 +229,7 @@ function Contact() {
       <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm">
         {links.map((link) => (
           <li key={link.label}>
-            <a href={link.href} className={linkClass}>
+            <a href={link.href} {...(link.href.startsWith("mailto:") ? {} : external)} className={linkClass}>
               {link.label}
             </a>
           </li>
