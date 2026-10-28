@@ -20,7 +20,12 @@ export const metadata: Metadata = {
     description: SITE.description,
     siteName: SITE.name,
   },
-  icons: { icon: withBasePath("/favicon.ico") },
+  icons: {
+    icon: [
+      { url: withBasePath("/favicon.ico"), sizes: "any" },
+      { url: withBasePath("/icon.png"), type: "image/png", sizes: "32x32" },
+    ],
+  },
 };
 
 export const viewport: Viewport = {
