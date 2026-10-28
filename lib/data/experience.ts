@@ -66,7 +66,7 @@ export const EXPERIENCE: ExperienceEntry[] = [
   {
     id: "sgbc",
     company: "Sudha Gopalakrishnan Brain Centre, IIT Madras",
-    role: "AI Developer Intern",
+    role: "AI LLM Intern",
     period: "November 2025",
     location: "Chennai",
     type: "Internship",
