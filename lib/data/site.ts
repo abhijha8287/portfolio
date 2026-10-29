@@ -9,9 +9,9 @@ export const HERO = {
     "Final year of the four-year BS in Data Science at IIT Madras (B.Sc. completed 2026). Previously Data Scientist at Trackleo Technologies.",
   availability: "Open to ML / AI Engineer roles, remote or in Delhi.",
   stats: [
-    { value: "1,000+", label: "users on Pips AI" },
-    { value: "15 days", label: "from idea to MVP" },
-    { value: "4", label: "roles in industry and research" },
+    { value: "Rank 1", label: "Kaggle, IIT Madras course competition" },
+    { value: "Top 1%", label: "Kaggle, Engage 2 leaderboard" },
+    { value: "15 days", label: "to build Pips AI" },
     { value: "S grade", label: "ML Practice, IIT Madras" },
   ],
 };
@@ -32,12 +32,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: "Pips AI",
     href: "https://www.pipsai.online",
     linkLabel: "pipsai.online",
-    metrics: ["1,000+ users", "15-day MVP", "Built solo"],
+    metrics: ["Built in 15 days", "Built solo", "Live"],
     challenge:
       "Prop-firm traders fail challenges by breaking rules they can't track while they trade, and generic tools don't know each firm's rules.",
     built:
       "A trading platform with a live rule-compliance view and an AI coach (Claude API) that reviews trades against the firm's own rule text. FastAPI and PostgreSQL backend, Next.js frontend, shipped with Docker.",
-    impact: "Went from idea to MVP in 15 days and passed 1,000 users within 2 months of launch.",
+    impact: "Went from idea to a working, live application in 15 days, built end to end by one person.",
     stack: ["FastAPI", "PostgreSQL", "Next.js", "TypeScript", "Claude API", "Docker"],
   },
   {
@@ -97,6 +97,25 @@ export const PROJECT_CARDS: ProjectCard[] = [
     description: "DVC, Feast and MLflow pipelines with CI/CD, deployed on Kubernetes and Vertex AI. Scored 100/100 at IIT Madras.",
     stack: "MLflow · DVC · Kubernetes · Vertex AI",
     href: `${GITHUB}/23f3004013_MLOPS_WEEKLY_ASSIGNMENT`,
+  },
+];
+
+export type Competition = {
+  title: string;
+  result: string;
+  description: string;
+};
+
+export const COMPETITIONS: Competition[] = [
+  {
+    title: "Apple Disease Classification",
+    result: "Rank 1",
+    description: "Image classification of apple diseases. Kaggle competition run by the IIT Madras course team.",
+  },
+  {
+    title: "Engage 2: Value from Clicks to Conversions",
+    result: "Top 1%",
+    description: "Predicting how much a web session is worth from browsing and traffic-source data.",
   },
 ];
 

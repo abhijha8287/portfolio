@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
     tagline: "AI-powered finance university and live MT5 trading platform",
     description:
       "A trading education and execution platform combining guided courses, a prop-firm marketplace, and a unified multi-account MetaTrader 5 terminal with an AI mentor guiding traders from their first lesson to live execution. Built solo, in parallel with a full-time Data Scientist role, for the founder behind Trackleo.",
-    outcome: "Shipped the MVP solo in 15 days; the live product crossed 1,000+ users within its first 2 months.",
+    outcome: "Built solo in 15 days.",
     highlights: [
       "12 structured courses with quizzes, exams, and certification",
       "40+ integrated prop-firm programs with side-by-side comparison",

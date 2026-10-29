@@ -1,7 +1,7 @@
 import { EDUCATION } from "@/lib/data/education";
 import { EXPERIENCE } from "@/lib/data/experience";
 import { PROFILE, SOCIAL } from "@/lib/data/profile";
-import { CASE_STUDIES, HERO, PROJECT_CARDS, SKILL_GROUPS } from "@/lib/data/site";
+import { CASE_STUDIES, COMPETITIONS, HERO, PROJECT_CARDS, SKILL_GROUPS } from "@/lib/data/site";
 
 const NAV = [
   { href: "#experience", label: "Experience" },
@@ -183,6 +183,24 @@ function Projects() {
   );
 }
 
+function Competitions() {
+  return (
+    <Section id="competitions" title="Competitions">
+      <ul className="space-y-6">
+        {COMPETITIONS.map((item) => (
+          <li key={item.title} className="grid gap-1 sm:grid-cols-[9.5rem_1fr] sm:gap-6">
+            <p className="font-mono text-sm font-medium text-accent">{item.result}</p>
+            <div>
+              <h3 className="font-medium">{item.title}</h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted">{item.description}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </Section>
+  );
+}
+
 function Skills() {
   const school = EDUCATION[0];
   return (
@@ -247,6 +265,7 @@ export default function Home() {
         <Hero />
         <Experience />
         <Projects />
+        <Competitions />
         <Skills />
         <Contact />
       </main>
