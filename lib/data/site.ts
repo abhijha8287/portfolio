@@ -119,7 +119,8 @@ export const COMPETITIONS: Competition[] = [
   },
 ];
 
-// Logos from SVGL (svgl.app), stored in public/tech. Tools without an SVGL logo show as plain text.
+// Logos from SVGL (svgl.app); where SVGL has none, from Simple Icons (si-*.svg). Stored in public/tech.
+// XGBoost, SQL and RAG have no logo in either set and show as plain text.
 export type Tech = { name: string; icon?: string; darkIcon?: string; invertDark?: boolean };
 
 export const SKILL_GROUPS: { label: string; items: Tech[] }[] = [
@@ -140,20 +141,20 @@ export const SKILL_GROUPS: { label: string; items: Tech[] }[] = [
       { name: "Gemini", icon: "/tech/gemini.svg" },
       { name: "LangChain", icon: "/tech/langchain.svg" },
       { name: "Hugging Face", icon: "/tech/huggingface.svg" },
-      { name: "LangGraph" },
+      { name: "LangGraph", icon: "/tech/si-langgraph.svg" },
       { name: "RAG" },
-      { name: "MCP" },
+      { name: "MCP", icon: "/tech/si-modelcontextprotocol.svg", darkIcon: "/tech/si-modelcontextprotocol-dark.svg" },
     ],
   },
   {
     label: "Machine learning",
     items: [
       { name: "TensorFlow", icon: "/tech/tensorflow-light.svg", darkIcon: "/tech/tensorflow-dark.svg" },
-      { name: "PyTorch" },
-      { name: "scikit-learn" },
+      { name: "PyTorch", icon: "/tech/si-pytorch.svg" },
+      { name: "scikit-learn", icon: "/tech/si-scikitlearn.svg" },
       { name: "XGBoost" },
-      { name: "OpenCV" },
-      { name: "YOLO" },
+      { name: "OpenCV", icon: "/tech/si-opencv.svg" },
+      { name: "YOLO", icon: "/tech/si-yolo.svg", darkIcon: "/tech/si-yolo-dark.svg" },
     ],
   },
   {
@@ -167,7 +168,7 @@ export const SKILL_GROUPS: { label: string; items: Tech[] }[] = [
       { name: "MongoDB", icon: "/tech/mongodb-light.svg", darkIcon: "/tech/mongodb-dark.svg" },
       { name: "Supabase", icon: "/tech/supabase.svg" },
       { name: "Prisma", icon: "/tech/prisma-light.svg", darkIcon: "/tech/prisma-dark.svg" },
-      { name: "Celery" },
+      { name: "Celery", icon: "/tech/si-celery.svg" },
     ],
   },
   {
@@ -188,9 +189,9 @@ export const SKILL_GROUPS: { label: string; items: Tech[] }[] = [
       { name: "AWS", icon: "/tech/aws-light.svg", darkIcon: "/tech/aws-dark.svg" },
       { name: "Git", icon: "/tech/git.svg" },
       { name: "GitHub", icon: "/tech/github-light.svg", darkIcon: "/tech/github-dark.svg" },
-      { name: "MLflow" },
-      { name: "DVC" },
-      { name: "GitHub Actions" },
+      { name: "MLflow", icon: "/tech/si-mlflow.svg" },
+      { name: "DVC", icon: "/tech/si-dvc.svg" },
+      { name: "GitHub Actions", icon: "/tech/si-githubactions.svg" },
     ],
   },
 ];
