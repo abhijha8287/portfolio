@@ -119,10 +119,78 @@ export const COMPETITIONS: Competition[] = [
   },
 ];
 
-export const SKILL_GROUPS: { label: string; items: string[] }[] = [
-  { label: "Languages", items: ["Python", "SQL", "TypeScript", "JavaScript"] },
-  { label: "Machine Learning", items: ["PyTorch", "TensorFlow / Keras", "scikit-learn", "XGBoost", "LightGBM", "OpenCV", "YOLO"] },
-  { label: "LLMs & Agents", items: ["LangGraph", "LangChain", "RAG", "MCP", "OpenAI / Claude / Gemini APIs", "DeepEval"] },
-  { label: "MLOps & Cloud", items: ["MLflow", "DVC", "Feast", "Docker", "Kubernetes", "GitHub Actions", "GCP Vertex AI", "AWS"] },
-  { label: "Backend & Web", items: ["FastAPI", "PostgreSQL", "Redis", "Celery", "Next.js", "React"] },
+// Logos from SVGL (svgl.app), stored in public/tech. Tools without an SVGL logo show as plain text.
+export type Tech = { name: string; icon?: string; darkIcon?: string; invertDark?: boolean };
+
+export const SKILL_GROUPS: { label: string; items: Tech[] }[] = [
+  {
+    label: "Languages",
+    items: [
+      { name: "Python", icon: "/tech/python.svg" },
+      { name: "TypeScript", icon: "/tech/typescript.svg" },
+      { name: "JavaScript", icon: "/tech/javascript.svg" },
+      { name: "SQL" },
+    ],
+  },
+  {
+    label: "AI & LLMs",
+    items: [
+      { name: "OpenAI", icon: "/tech/openai-light.svg", darkIcon: "/tech/openai-dark.svg" },
+      { name: "Claude", icon: "/tech/claude.svg" },
+      { name: "Gemini", icon: "/tech/gemini.svg" },
+      { name: "LangChain", icon: "/tech/langchain.svg" },
+      { name: "Hugging Face", icon: "/tech/huggingface.svg" },
+      { name: "LangGraph" },
+      { name: "RAG" },
+      { name: "MCP" },
+    ],
+  },
+  {
+    label: "Machine learning",
+    items: [
+      { name: "TensorFlow", icon: "/tech/tensorflow-light.svg", darkIcon: "/tech/tensorflow-dark.svg" },
+      { name: "PyTorch" },
+      { name: "scikit-learn" },
+      { name: "XGBoost" },
+      { name: "OpenCV" },
+      { name: "YOLO" },
+    ],
+  },
+  {
+    label: "Backend & data",
+    items: [
+      { name: "FastAPI", icon: "/tech/fastapi.svg" },
+      { name: "Flask", icon: "/tech/flask-light.svg", darkIcon: "/tech/flask-dark.svg" },
+      { name: "Node.js", icon: "/tech/nodejs.svg" },
+      { name: "PostgreSQL", icon: "/tech/postgresql.svg" },
+      { name: "Redis", icon: "/tech/redis.svg" },
+      { name: "MongoDB", icon: "/tech/mongodb-light.svg", darkIcon: "/tech/mongodb-dark.svg" },
+      { name: "Supabase", icon: "/tech/supabase.svg" },
+      { name: "Prisma", icon: "/tech/prisma-light.svg", darkIcon: "/tech/prisma-dark.svg" },
+      { name: "Celery" },
+    ],
+  },
+  {
+    label: "Frontend",
+    items: [
+      { name: "React", icon: "/tech/react-light.svg", darkIcon: "/tech/react-dark.svg" },
+      { name: "Next.js", icon: "/tech/nextjs.svg", invertDark: true },
+      { name: "Tailwind CSS", icon: "/tech/tailwind.svg" },
+      { name: "Vue", icon: "/tech/vue.svg" },
+    ],
+  },
+  {
+    label: "Cloud & MLOps",
+    items: [
+      { name: "Docker", icon: "/tech/docker.svg" },
+      { name: "Kubernetes", icon: "/tech/kubernetes.svg" },
+      { name: "Google Cloud", icon: "/tech/gcp.svg" },
+      { name: "AWS", icon: "/tech/aws-light.svg", darkIcon: "/tech/aws-dark.svg" },
+      { name: "Git", icon: "/tech/git.svg" },
+      { name: "GitHub", icon: "/tech/github-light.svg", darkIcon: "/tech/github-dark.svg" },
+      { name: "MLflow" },
+      { name: "DVC" },
+      { name: "GitHub Actions" },
+    ],
+  },
 ];

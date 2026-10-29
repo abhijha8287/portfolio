@@ -3,7 +3,7 @@ import { withBasePath } from "@/lib/base-path";
 import { EDUCATION } from "@/lib/data/education";
 import { EXPERIENCE } from "@/lib/data/experience";
 import { PROFILE, SOCIAL } from "@/lib/data/profile";
-import { CASE_STUDIES, COMPETITIONS, HERO, PROJECT_CARDS, SKILL_GROUPS } from "@/lib/data/site";
+import { CASE_STUDIES, COMPETITIONS, HERO, PROJECT_CARDS, SKILL_GROUPS, type Tech } from "@/lib/data/site";
 
 function Hero() {
   return (
@@ -156,15 +156,41 @@ function Competitions() {
   );
 }
 
+function TechChip({ tech }: { tech: Tech }) {
+  return (
+    <span className="inline-flex h-7 items-center gap-1.5 rounded-md border border-line bg-surface px-2 text-xs text-fg transition-colors hover:border-muted">
+      {tech.icon ? (
+        <picture className="contents">
+          {tech.darkIcon ? <source srcSet={withBasePath(tech.darkIcon)} media="(prefers-color-scheme: dark)" /> : null}
+          {/* eslint-disable-next-line @next/next/no-img-element -- static export, tiny SVGs */}
+          <img
+            src={withBasePath(tech.icon)}
+            alt=""
+            width={16}
+            height={16}
+            loading="lazy"
+            className={`size-4 object-contain ${tech.invertDark ? "dark:invert" : ""}`}
+          />
+        </picture>
+      ) : null}
+      {tech.name}
+    </span>
+  );
+}
+
 function Skills() {
   const school = EDUCATION[0];
   return (
     <Section id="skills" title="Skills & education">
-      <dl className="space-y-5">
+      <dl className="space-y-3">
         {SKILL_GROUPS.map((group) => (
-          <div key={group.label} className="grid gap-1 sm:grid-cols-[9.5rem_1fr] sm:gap-6">
-            <dt className="text-sm font-medium">{group.label}</dt>
-            <dd className="text-sm leading-relaxed text-muted">{group.items.join(", ")}</dd>
+          <div key={group.label} className="grid gap-2 sm:grid-cols-[9.5rem_1fr] sm:items-start sm:gap-6">
+            <dt className="text-sm font-medium sm:leading-7">{group.label}</dt>
+            <dd className="flex flex-wrap gap-1.5">
+              {group.items.map((tech) => (
+                <TechChip key={tech.name} tech={tech} />
+              ))}
+            </dd>
           </div>
         ))}
       </dl>
