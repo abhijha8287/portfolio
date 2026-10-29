@@ -25,6 +25,7 @@ export type Certification = {
   issuer: string;
   date?: string;
   type: "degree" | "diploma" | "certificate" | "professional";
+  credentialUrl?: string;
 };
 
 export const CERTIFICATIONS: Certification[] = [
@@ -52,6 +53,24 @@ export const CERTIFICATIONS: Certification[] = [
     title: "Advanced Certificate in Machine Learning & Data Science",
     issuer: "IIT Madras",
     type: "certificate",
+  },
+  {
+    id: "iitm-bootcamp",
+    title: "Bootcamp Certificate",
+    issuer: "IIT Madras",
+    type: "certificate",
+  },
+  {
+    id: "codebasics-sql",
+    title: "SQL for Data Science",
+    issuer: "Codebasics",
+    type: "professional",
+  },
+  {
+    id: "codebasics-math-stats",
+    title: "Math and Statistics for AI, Data Science",
+    issuer: "Codebasics",
+    type: "professional",
   },
 ];
 

@@ -1,54 +1,9 @@
+import { Footer, Header, Section, external, linkClass } from "@/components/site-chrome";
+import { withBasePath } from "@/lib/base-path";
 import { EDUCATION } from "@/lib/data/education";
 import { EXPERIENCE } from "@/lib/data/experience";
 import { PROFILE, SOCIAL } from "@/lib/data/profile";
 import { CASE_STUDIES, COMPETITIONS, HERO, PROJECT_CARDS, SKILL_GROUPS } from "@/lib/data/site";
-
-const NAV = [
-  { href: "#experience", label: "Experience" },
-  { href: "#projects", label: "Projects" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contact", label: "Contact" },
-];
-
-// Links that leave the page open in a new tab; in-page section links (#...) stay in place.
-const external = { target: "_blank", rel: "noopener noreferrer" } as const;
-
-const linkClass = "underline decoration-line underline-offset-4 transition-colors hover:text-accent hover:decoration-accent";
-
-function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
-  return (
-    <section id={id} className="border-t border-line py-14 sm:py-16">
-      <h2 className="mb-8 font-mono text-sm text-muted">{title}</h2>
-      {children}
-    </section>
-  );
-}
-
-function Header() {
-  return (
-    <header className="sticky top-0 z-10 border-b border-line bg-bg/90 backdrop-blur">
-      <div className="mx-auto flex max-w-3xl items-center justify-between gap-4 px-5 py-4">
-        <a href="#top" className="font-mono text-sm font-medium">
-          ~/abhishek
-        </a>
-        <nav className="flex gap-3.5 text-[13px] text-muted sm:gap-6 sm:text-sm">
-          {NAV.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className={`whitespace-nowrap transition-colors hover:text-fg ${item.href === "#skills" ? "hidden sm:inline" : ""}`}
-            >
-              {item.label}
-            </a>
-          ))}
-          <a href={SOCIAL.github} {...external} className="hidden whitespace-nowrap transition-colors hover:text-fg sm:inline">
-            GitHub ↗
-          </a>
-        </nav>
-      </div>
-    </header>
-  );
-}
 
 function Hero() {
   return (
@@ -225,6 +180,11 @@ function Skills() {
             S grade (highest) in Machine Learning Practice and Modern Application Development I &amp; II. Diplomas in
             Programming and in Data Science.
           </p>
+          <p className="mt-3 text-sm">
+            <a href={withBasePath("/certificates/")} className={linkClass}>
+              All certificates →
+            </a>
+          </p>
         </div>
       </div>
     </Section>
@@ -269,10 +229,7 @@ export default function Home() {
         <Skills />
         <Contact />
       </main>
-      <footer className="mx-auto flex max-w-3xl justify-between border-t border-line px-5 py-8 font-mono text-xs text-muted">
-        <span>~/abhishek</span>
-        <span>© {new Date().getFullYear()} Abhishek Jha</span>
-      </footer>
+      <Footer />
     </>
   );
 }
