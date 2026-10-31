@@ -120,7 +120,7 @@ export const COMPETITIONS: Competition[] = [
 ];
 
 // Logos from SVGL (svgl.app); where SVGL has none, from Simple Icons (si-*.svg). Stored in public/tech.
-// XGBoost, SQL and RAG have no logo in either set and show as plain text.
+// XGBoost, SQL, RAG, Feast, Vertex AI and the practices have no logo in either set and show as plain text.
 export type Tech = { name: string; icon?: string; darkIcon?: string; invertDark?: boolean };
 
 export const SKILL_GROUPS: { label: string; items: Tech[] }[] = [
@@ -191,7 +191,28 @@ export const SKILL_GROUPS: { label: string; items: Tech[] }[] = [
       { name: "GitHub", icon: "/tech/github-light.svg", darkIcon: "/tech/github-dark.svg" },
       { name: "MLflow", icon: "/tech/si-mlflow.svg" },
       { name: "DVC", icon: "/tech/si-dvc.svg" },
+      { name: "Feast" },
+      { name: "Vertex AI" },
       { name: "GitHub Actions", icon: "/tech/si-githubactions.svg" },
+      { name: "Prometheus", icon: "/tech/si-prometheus.svg" },
+      { name: "Grafana", icon: "/tech/si-grafana.svg" },
+    ],
+  },
+  {
+    label: "MLOps practices",
+    items: [
+      { name: "CI/CD for ML" },
+      { name: "Experiment tracking" },
+      { name: "Hyperparameter tuning" },
+      { name: "Feature stores" },
+      { name: "Model serving" },
+      { name: "Model monitoring" },
+      { name: "LLMOps" },
+      { name: "Explainable AI (SHAP)" },
+      { name: "Bias & fairness" },
+      { name: "ML security" },
+      { name: "Federated learning" },
+      { name: "Edge inference" },
     ],
   },
 ];
