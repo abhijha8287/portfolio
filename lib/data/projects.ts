@@ -187,8 +187,8 @@ export const PROJECTS: Project[] = [
     description:
       "CNN and ResNet50-based fruit freshness classification system with a Streamlit web application for real-time predictions.",
     outcome:
-      "Reached 99.8% validation accuracy and reduced manual freshness inspection time from hours to minutes.",
-    highlights: ["99.8% validation accuracy", "ResNet50 transfer learning", "Streamlit app", "Real-time inference"],
+      "Reached 97.8% validation accuracy and reduced manual freshness inspection time from hours to minutes.",
+    highlights: ["97.8% validation accuracy", "ResNet50 transfer learning", "Streamlit app", "Real-time inference"],
     tech: ["Python", "TensorFlow", "Keras", "ResNet50", "Streamlit"],
     category: "Computer Vision",
     github: GITHUB_PROFILE,

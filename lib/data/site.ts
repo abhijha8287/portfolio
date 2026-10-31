@@ -6,7 +6,7 @@ export const HERO = {
   intro:
     "I build ML systems and LLM agents and take them from training to production: deep learning models, multi-agent workflows, evaluation and deployment.",
   context:
-    "Final year of the four-year BS in Data Science at IIT Madras (B.Sc. completed 2026). Previously Data Scientist at Trackleo Technologies.",
+    "Final year of the four-year BS in Data Science at IIT Madras (B.Sc. completed 2026). Previously Founding Engineer at Trackleo Technologies.",
   availability: "Open to ML / AI Engineer roles, remote or in Delhi.",
   stats: [
     { value: "Rank 1", label: "Kaggle, IIT Madras course competition" },

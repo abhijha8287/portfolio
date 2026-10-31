@@ -44,7 +44,7 @@ export const PROFILE = {
   resumeUrl: withBasePath("/resume.pdf"),
   bio: [
     "I am in the final year of the four-year BS in Data Science and Applications at IIT Madras (B.Sc completed in May 2026), and alongside it I focus on building end-to-end AI products with Python, LLMs, RAG, multi-agent systems, deep learning, and computer vision.",
-    "Previously, I worked as a Data Scientist at Trackleo Technologies, where I engineered a five-class retinal disease classifier and helped launch the company's first AI-powered web platform in under three months.",
+    "Previously, I was Founding Engineer (web developer and data scientist) at Trackleo Technologies, where I engineered a five-class retinal disease classifier and helped launch the company's first AI-powered web platform in under three months.",
     "I care about AI that solves real problems for real people: healthcare intelligence, automation, decision support, scientific workflows, and production-ready full-stack AI tools.",
   ],
   focusAreas: [
@@ -60,7 +60,7 @@ export const PROFILE = {
   ],
   stats: [
     { value: "11", label: "MCP tools built for 3D Slicer" },
-    { value: "99.8%", label: "fruit classifier validation accuracy" },
+    { value: "97.8%", label: "fruit classifier validation accuracy" },
     { value: "60%", label: "faster MRI exploration workflows" },
     { value: "3 mo", label: "to launch Trackleo's AI platform" },
   ],

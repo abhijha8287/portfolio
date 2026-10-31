@@ -17,7 +17,7 @@ export const EXPERIENCE: ExperienceEntry[] = [
     id: "trackleo",
     company: "Trackleo Technologies Pvt. Ltd.",
     companyUrl: "https://trackleo.com",
-    role: "Data Scientist",
+    role: "Founding Engineer (Web Developer & Data Scientist)",
     period: "February 2026 - July 2026",
     location: "Hybrid",
     type: "Full-time",
@@ -56,7 +56,7 @@ export const EXPERIENCE: ExperienceEntry[] = [
     summary:
       "Delivered an end-to-end image classification solution for real-time fruit freshness inspection with a Streamlit prediction interface.",
     highlights: [
-      "Built a CNN and ResNet50 fruit freshness classifier with 99.8% validation accuracy.",
+      "Built a CNN and ResNet50 fruit freshness classifier with 97.8% validation accuracy.",
       "Automated manual inspection and reduced evaluation time from hours to minutes.",
       "Improved review productivity by an estimated 80% for real-time decision-making.",
       "Applied data analysis, machine learning, deep learning, GenAI, NLP, and agentic AI concepts.",
