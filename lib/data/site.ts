@@ -104,6 +104,7 @@ export type Competition = {
   title: string;
   result: string;
   description: string;
+  href: string;
 };
 
 export const COMPETITIONS: Competition[] = [
@@ -111,11 +112,13 @@ export const COMPETITIONS: Competition[] = [
     title: "Apple Disease Classification",
     result: "Rank 1",
     description: "Image classification of apple diseases. Kaggle competition in the IIT Madras Data Science Lab course.",
+    href: "https://www.kaggle.com/competitions/apple-disease-classification-26-t-3/leaderboard",
   },
   {
     title: "Engage 2: Value from Clicks to Conversions",
     result: "Top 1%",
     description: "Predicting how much a web session is worth from browsing and traffic-source data. Kaggle competition for the IIT Madras Machine Learning Practice (MLP) project.",
+    href: "https://www.kaggle.com/competitions/engage-2-value-from-clicks-to-conversions/leaderboard",
   },
 ];
 

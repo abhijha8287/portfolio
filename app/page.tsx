@@ -146,7 +146,11 @@ function Competitions() {
           <li key={item.title} className="grid gap-1 sm:grid-cols-[9.5rem_1fr] sm:gap-6">
             <p className="font-mono text-sm font-medium text-accent">{item.result}</p>
             <div>
-              <h3 className="font-medium">{item.title}</h3>
+              <h3 className="font-medium">
+                <a href={item.href} {...external} className={linkClass}>
+                  {item.title} ↗
+                </a>
+              </h3>
               <p className="mt-1.5 text-sm leading-relaxed text-muted">{item.description}</p>
             </div>
           </li>
