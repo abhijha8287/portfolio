@@ -9,8 +9,8 @@ export const HERO = {
     "Final year of the four-year BS in Data Science at IIT Madras (B.Sc. completed 2026). Previously Founding Engineer at Trackleo Technologies.",
   availability: "Open to ML / AI Engineer roles, remote or in Delhi.",
   stats: [
-    { value: "Rank 1", label: "Kaggle, IIT Madras course competition" },
-    { value: "Top 1%", label: "Kaggle, Engage 2 leaderboard" },
+    { value: "Rank 1", label: "Kaggle, IIT Madras Data Science Lab" },
+    { value: "Top 1%", label: "Kaggle, IIT Madras MLP project" },
     { value: "15 days", label: "to build Pips AI" },
     { value: "S grade", label: "ML Practice, IIT Madras" },
   ],
@@ -110,12 +110,12 @@ export const COMPETITIONS: Competition[] = [
   {
     title: "Apple Disease Classification",
     result: "Rank 1",
-    description: "Image classification of apple diseases. Kaggle competition run by the IIT Madras course team.",
+    description: "Image classification of apple diseases. Kaggle competition in the IIT Madras Data Science Lab course.",
   },
   {
     title: "Engage 2: Value from Clicks to Conversions",
     result: "Top 1%",
-    description: "Predicting how much a web session is worth from browsing and traffic-source data.",
+    description: "Predicting how much a web session is worth from browsing and traffic-source data. Kaggle competition for the IIT Madras Machine Learning Practice (MLP) project.",
   },
 ];
 
